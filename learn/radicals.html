@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>learn kanji radicals</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/radicals.css" title="default">
+<link rel="alternate stylesheet" href="../css/radicalsday.css" title="alternate">
+<script type="text/javascript" src="../js/styleswitcher.js"></script>
+<script type="text/javascript" src="../js/sortable.min.js"></script>
+</head>
+<body>
+<a id="top"></a><script src="../js/radicals.js"></script>
+
+<div class="mobnav-left">
+<ul class="mobnav-links">
+<li class="mobnav-link-item">
+<a class="mobnav-link-p" href="learnmain.html">学習</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../grammar/grammarmain.html">文法</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../library/librarymain.html">図書館</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../updates.html">日誌</a>
+</li>
+</ul>
+</div>
+
+<div class="mobnav-right">
+<ul class="mobnav-links">
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../horon/horonmain.html">補論</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../threads.html">掲示板</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../index.html">ホーム</a>
+</li>
+</ul>
+</div>
+
+
+<div class="topnav-links-container">
+<a href="../index.html"><img src="../hanko.png" id="itazura"></a>
+<ul class="topnav-links">
+<li class="topnav-link-item">
+<a class="topnav-link-eng">learn</a><br>
+<a class="topnav-link-p" href="learnmain.html">学習</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">grammar</a><br>
+<a class="topnav-link" href="../grammar/grammarmain.html">文法</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">library</a><br>
+<a class="topnav-link" href="../library/librarymain.html">図書館</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">updates</a><br>
+<a class="topnav-link" href="../updates.html">日誌</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">misc.</a><br>
+<a class="topnav-link" href="../horon/horonmain.html">補論</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">threads</a><br>
+<a class="topnav-link" href="../threads.html">掲示板</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">home</a><br>
+<a class="topnav-link" href="../index.html">ホーム</a>
+</li>
+</ul>
+</div>
+</div>
+<div style="clear:both"></div>
+<hr class="brush">
+<div class="modechange"><a href="#" onclick="setActiveStyleSheet('default'); return false;">night</a></div>
+<div class="modechange"><a href="#" onclick="setActiveStyleSheet('alternate'); return false;">day</a></div>
+<div class="modechange2"><a href="https://djtguide.neocities.org/kana/index.html">original</a></div>
+<div class="bodymargin">
+<p><a class="underscore" href="../index.html">ホーム</a> → <a class="underscore" href="learnmain.html">学習</a> → radicals</p>
+<h1>kanji radicals</h1>
+<hr class="dotted">
+
+<div id="kanabox">
+<div id="answer">&nbsp;</div>
+<div id="kana_con"><span id="kana"></span></div>
+<div id="input"><input type="text" id="input_box" autofocus /></div>
+<div id="message">write the correct radical then hover over the name to show the answer</div>
+<ul id="tools">
+<li id="tool_sound" style="visibility: hidden;"><a>Play sound</a></li>
+<li id="tool_stroke" style="visibility: hidden;"><a>Stroke order</a></li>
+<!-- <li id="tool_mnemonic"><a>Mnemonic</a></li> -->
+</ul>
+<div id="count"></div>
+</div>
+<hr class="dotted">
+
+
+<h3>stroke # <span class="checkall"><a onclick="check('hcheck')">check all</a> | <a onclick="uncheck('hcheck')">uncheck all</a></span></h3>
+<table>
+<tr class="checkrow hcheck">
+<td><input type="checkbox" class="kanacheck" id="hsingle" checked />1</td>
+<td><input type="checkbox" class="kanacheck" id="hk" />2</td>
+<td><input type="checkbox" class="kanacheck" id="hs" />3</td>
+<td><input type="checkbox" class="kanacheck" id="ht" />4</td>
+<td><input type="checkbox" class="kanacheck" id="hn" />5</td>
+</tr>
+<tr class="checkrow hcheck">
+<td><input type="checkbox" class="kanacheck" id="hh" />6</td>
+<td><input type="checkbox" class="kanacheck" id="hm" />7</td>
+<td><input type="checkbox" class="kanacheck" id="hy" />8</td>
+<td><input type="checkbox" class="kanacheck" id="hr" />9</td>
+<td><input type="checkbox" class="kanacheck" id="hw" />10</td>
+</tr>
+<tr class="checkrow hcheck">
+<td><input type="checkbox" class="kanacheck" id="hn1" />11</td>
+<td><input type="checkbox" class="kanacheck" id="hg" />12</td>
+<td><input type="checkbox" class="kanacheck" id="hz" />13</td>
+<td><input type="checkbox" class="kanacheck" id="hd" />14</td>
+<td><input type="checkbox" class="kanacheck" id="hb" />15</td>
+</tr>
+<tr class="checkrow hcheck">
+<td><input type="checkbox" class="kanacheck" id="hp" />16</td>
+<td><input type="checkbox" class="kanacheck" id="hdk" />17</td>
+</tr>
+</table>
+
+
+<h3 style="display: none;">Fonts <span class="checkall"><a onclick="check('allfonts')">check all</a> | <a onclick="uncheck('allfonts')">uncheck all</a></span></h3>
+
+<table style="display: none;">
+<tr class="checkrow allfonts">
+<td><input type="checkbox" class="fontcheck" id="default" checked /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-BokutohNStd-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-FolkPro-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-HappyNStd-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-KumoyaStd-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-KyokaICAPro-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-Shuuei3Std-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="A-OTF-ZenGoNStd-Regular" /></td>
+<td><input type="checkbox" class="fontcheck" id="ArmedBanana" /></td>
+</tr>
+<tr>
+<td><span class="font_example">ぎ </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-BokutohNStd-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-FolkPro-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-HappyNStd-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-KumoyaStd-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-KyokaICAPro-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-Shuuei3Std-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/A-OTF-ZenGoNStd-Regular/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/ArmedBanana/ぎ.png" /> </span></td>
+</tr>
+
+<tr class="checkrow allfonts">
+<td><input type="checkbox" class="fontcheck" id="DFCry5_0" /></td>
+<td><input type="checkbox" class="fontcheck" id="DFMrg3_0" /></td>
+<td><input type="checkbox" class="fontcheck" id="F5AJCCPE_0" /></td>
+<td><input type="checkbox" class="fontcheck" id="F5AJCMHG" /></td>
+<td><input type="checkbox" class="fontcheck" id="MT_TARE" /></td>
+<td><input type="checkbox" class="fontcheck" id="SM-WIN" /></td>
+<td><input type="checkbox" class="fontcheck" id="SNsanafon" /></td>
+<td><input type="checkbox" class="fontcheck" id="sea" /></td>
+<td><input type="checkbox" class="fontcheck" id="KOI-WIN" /></td>
+</tr>
+<tr>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/DFCry5_0/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/DFMrg3_0/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/F5AJCCPE_0/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/F5AJCMHG/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/MT_TARE/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/SM-WIN/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/SNsanafon/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/sea/ぎ.png" /> </span></td>
+<td><span class="font_example"><img class="inverse" src="kana/fonts/KOI-WIN/ぎ.png" /> </span></td>
+</tr>
+</table>
+<hr class="dotted">
+<label class="showkana" for="toggle-1">show/hide explanation</label>
+<input class="showkana2" type="checkbox" id="toggle-1">
+<div class="kanahideshow">
+
+<hr class="dotted">
+<h2>The 214 traditional kanji radicals and their variants</h2>
+<u><li><a href="https://kanjialive.com/214-traditional-kanji-radicals/">original</a></li></u>
+<p>Kanji are classified in kanji dictionaries according to their main components which are called radicals (roots) in English and 部首 (ぶしゅ) in Japanese. 部 (ぶ) means a group and 首 (しゅ) means a chief (head/neck). There are 214 historical radicals derived from the 18th century <a class="underscore" href="https://en.wikipedia.org/wiki/Kangxi_Dictionary">Kangxi dictionary</a>.</p>
+<p>Every kanji without exception only has one radical / 部首 (ぶしゅ). Each radical has a meaning(s) and lends its meaning(s) to the kanji of which it is part. Please take a look at the examples below. The right part of these three kanji is the same but the left part is different. The left part of these kanji is their radical. Note how each radical imparts its meaning to the kanji:</p>
+<ul class="toc">
+<li class="toc">時:  The radical of this kanji is <img class="inverse" src="kana/radical/106.png" style="display:inline; height: 1.3em; margin-bottom:-0.3em;"> (sun, day, time). The meaning of this kanji is "time."</li>
+<li class="toc">詩:  The radical of this kanji is <img class="inverse" src="kana/radical/227.png" style="display:inline; height: 1.3em; margin-bottom:-0.3em;"> (words, to speak, say). The meaning of this kanji is "poetry, poem".</li>
+<li class="toc">持:  The radical of this kanji is <img class="inverse" src="kana/radical/088.png" style="display:inline; height: 1.3em; margin-bottom:-0.3em;"> (hand). The meaning of this kanji is "to hold".</li>
+</ul>
+<p>For this reason it is very important to learn each kanji’s radical, as well as the meaning(s) of its radical. Not all 214 radicals are in use in current Japanese but you will soon become familiar with the most important ones and their variants.</p>
+<p>There are no official Japanese names for radicals. But there are certain commonly-used names. That is why you will find differences in the Japanese names for the radicals on different websites and dictionaries.</p>
+<p>Radicals are categorized into seven main groups according to their position within a kanji. Please note that some kanji are also radicals in and of themselves (such as 大, 日, 月). In those cases, the kanji and the radical are one and the same, and thus the position of the radical in the kanji is irrelevant. As a result they do not fall into any one of the seven categories.</p>
+<table>
+<tr><td>へん (hen)</td><td><img class="inverse" src="kana/hen.png"></td><td>Radicals on the left side of the kanji</td></tr>
+<tr><td>つくり (tsukuri)</td><td><img class="inverse" src="kana/tsukuri.png"></td><td>Radicals on the right</td></tr>
+<tr><td>かんむり (kanmuri)</td><td><img class="inverse" src="kana/kanmuri.png"></td><td>Radicals on the top</td></tr>
+<tr><td>あし (ashi)</td><td><img class="inverse" src="kana/ashi.png"></td><td>Radicals on the bottom</td></tr>
+<tr><td>かまえ (kamae)</td><td><img class="inverse" src="kana/kunigamae.png"><br><img class="inverse" src="kana/gyougamae.png"><br><img class="inverse" src="kana/keigamae.png"><br><img class="inverse" src="kana/hakogamae.png"><br><img class="inverse" src="kana/tsutsumigamae.png"><br><img class="inverse" src="kana/kigamae.png"><br><img class="inverse" src="kana/mongamae.png"></td><td>Radicals which enclose the kanji</td></tr>
+<tr><td>たれ (tare)</td><td><img class="inverse" src="kana/tare.png"></td><td>Radicals which "hang down"</td></tr>
+<tr><td>にょう (nyou)</td><td><img class="inverse" src="kana/nyou.png"></td><td>Radicals which wrap around the bottom of a character</td></tr>
+</table>
+<hr class="dotted">
+</div>
+</div>
+<label class="showkana" for="toggle-2">show/hide radical table</label>
+<input class="showkana2" type="checkbox" id="toggle-2">
+<div class="kanahideshow">
+<div class="bodymargin">
+<h2>Table of radicals and their variants</h2>
+</div>
+<table class="sortable"><thead>
+<tr><th style="width:7em">STROKE#<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th><th style="width:8em">RADICAL<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th><th style="width:8em">POSITION<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th><th>MEANING<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th><th style="width:18em">READING<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th><th>NOTES<span style="float:right; font-size:1rem; margin-right:5px;">↕</span></th></tr></thead>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/001.png" style="height: 3em"></td><td></td><td>one, horizontal stroke</td><td>いち</td><td></td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/002.png" style="height: 3em"></td><td></td><td>vertical stroke</td><td>たてぼう</td><td></td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/003.png" style="height: 3em"></td><td></td><td>dot</td><td>てん</td><td></td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/004.png" style="height: 3em"></td><td></td><td>diagonal sweeping stroke</td><td>の</td><td></td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/004a.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>diagonal sweeping stroke</td><td>のかんむり</td><td>a variant of ⼃（の）</td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/005.png" style="height: 3em"></td><td></td><td>the second</td><td>おつ</td><td></td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/006.png" style="height: 3em"></td><td></td><td>the second</td><td>おつ</td><td>a variant of ⼄（おつ）</td></tr>
+<tr><td>1</td><td><img class="inverse" src="kana/radical/007.png" style="height: 3em"></td><td></td><td>vertical stroke with a hook</td><td>はねぼう</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/008.png" style="height: 3em"></td><td></td><td>two</td><td>に</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/009.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>lid, top</td><td>なべぶた</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/010.png" style="height: 3em"></td><td></td><td>person</td><td>ひと</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/011.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>person</td><td>にんべん</td><td>a variant of ⼈（ひと）</td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/012.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>person</td><td>ひとやね</td><td>a variant of ⼈（ひと）</td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/013.png" style="height: 3em"></td><td><img class="inverse" src="kana/ashi.png" style="height: 3em"></td><td>human legs</td><td>ひとあし</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/014.png" style="height: 3em"></td><td></td><td>to enter</td><td>いる</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/015.png" style="height: 3em"></td><td></td><td>eight</td><td>はち</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/016.png" style="height: 3em"></td><td></td><td>eight</td><td>はちがしら</td><td>a variant of ⼋（はち）</td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/017.png" style="height: 3em"></td><td><img class="inverse" src="kana/keigamae.png" style="height: 3em"></td><td>to enclose</td><td>けいがまえ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/018.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>cover, crown</td><td>わかんむり</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/019.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>ice</td><td>にすい</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/020.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>table</td><td>きにょう</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/021.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>wind</td><td>かぜかんむり</td><td>a variant of ⼏（きにょう）</td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/022.png" style="height: 3em"></td><td><img class="inverse" src="kana/nyou.png" style="height: 3em"></td><td>container, open box</td><td>かんにょう</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/023.png" style="height: 3em"></td><td></td><td>knife, sword</td><td>かたな</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/024.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>knife, sword</td><td>りっとう</td><td>a variant of ⼑（かたな）</td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/025.png" style="height: 3em"></td><td></td><td>power</td><td>ちから</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/026.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsutsumigamae.png" style="height: 3em"></td><td>to wrap</td><td>つつみがまえ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/027.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>spoon</td><td>さじ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/028.png" style="height: 3em"></td><td><img class="inverse" src="kana/hakogamae.png" style="height: 3em"></td><td>box</td><td>はこがまえ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/029.png" style="height: 3em"></td><td><img class="inverse" src="kana/hakogamae.png" style="height: 3em"></td><td>to conceal, hide</td><td>かくしがまえ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/030.png" style="height: 3em"></td><td></td><td>ten</td><td>じゅう</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/031.png" style="height: 3em"></td><td></td><td>oracle</td><td>ぼく</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/032.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>stamp, seal</td><td>ふしづくり</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/033.png" style="height: 3em"></td><td><img class="inverse" src="kana/tare.png" style="height: 3em"></td><td>cliff</td><td>がんだれ</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/034.png" style="height: 3em"></td><td></td><td>private, Katakana Mu</td><td>む</td><td></td></tr>
+<tr><td>2</td><td><img class="inverse" src="kana/radical/035.png" style="height: 3em"></td><td></td><td>again, right hand</td><td>また</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/036.png" style="height: 3em"></td><td></td><td>mouth</td><td>くち</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/037.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>mouth</td><td>くちへん</td><td>a variant of ⼝（くち）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/038.png" style="height: 3em"></td><td><img class="inverse" src="kana/kunigamae.png" style="height: 3em"></td><td>border, territorial boundaries</td><td>くにがまえ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/039.png" style="height: 3em"></td><td></td><td>earth</td><td>つち</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/040.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>earth</td><td>つちへん</td><td>a variant of ⼟（つち）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/041.png" style="height: 3em"></td><td></td><td>man, scholar, samurai</td><td>さむらい</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/042.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>man, scholar, samurai</td><td>さむらいかんむり</td><td>a variant of ⼠（さむらい）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/043.png" style="height: 3em"></td><td></td><td>to follow</td><td>のまた</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/044.png" style="height: 3em"></td><td><img class="inverse" src="kana/ashi.png" style="height: 3em"></td><td>to go slowly</td><td>なつあし</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/045.png" style="height: 3em"></td><td></td><td>evening</td><td>ゆうべ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/046.png" style="height: 3em"></td><td></td><td>large, big</td><td>だい</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/047.png" style="height: 3em"></td><td></td><td>woman</td><td>おんな</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/048.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>woman</td><td>おんなへん</td><td>a variant of ⼥（おんな）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/049.png" style="height: 3em"></td><td></td><td>child, son</td><td>こ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/050.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>child, son</td><td>こへん</td><td>a variant of ⼦（こ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/051.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>roof, house</td><td>うかんむり</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/052.png" style="height: 3em"></td><td></td><td>inch, (2.25 cm)</td><td>すん</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/053.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>inch, (2.25 cm)</td><td>すんづくり</td><td>a variant of ⼨（すん）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/054.png" style="height: 3em"></td><td></td><td>small</td><td>しょう</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/055.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>small</td><td>しょうかんむり</td><td>a variant of ⼩（しょう）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/056.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>lame leg</td><td>だいのまげあし</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/057.png" style="height: 3em"></td><td><img class="inverse" src="kana/tare.png" style="height: 3em"></td><td>corpse, awning</td><td>しかばね</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/058.png" style="height: 3em"></td><td></td><td>sprout</td><td>くさのめ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/059.png" style="height: 3em"></td><td></td><td>mountain</td><td>やま</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/060.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>mountain</td><td>やまへん</td><td>a variant of ⼭（やま）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/061.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>mountain</td><td>やまかんむり</td><td>a variant of ⼭（やま）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/062.png" style="height: 3em"></td><td></td><td>winding river</td><td>まがりがわ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/063.png" style="height: 3em"></td><td></td><td>river</td><td>さんぼんがわ</td><td>a variant of ⼮（まがりがわ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/064.png" style="height: 3em"></td><td></td><td>work, carpenter, skill</td><td>たくみ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/065.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>work, carpenter, skill</td><td>たくみへん</td><td>a variant of ⼯（たくみ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/066.png" style="height: 3em"></td><td></td><td>self</td><td>おのれ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/067.png" style="height: 3em"></td><td></td><td>cloth</td><td>はば</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/068.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>cloth</td><td>はばへん</td><td>a variant of ⼱（はば）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/069.png" style="height: 3em"></td><td></td><td>to dry, shield</td><td>かん</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/070.png" style="height: 3em"></td><td></td><td>young, slight</td><td>いとがしら</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/071.png" style="height: 3em"></td><td><img class="inverse" src="kana/tare.png" style="height: 3em"></td><td>slanting roof</td><td>まだれ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/072.png" style="height: 3em"></td><td><img class="inverse" src="kana/nyou.png" style="height: 3em"></td><td>to move, stretch</td><td>えんにょう</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/073.png" style="height: 3em"></td><td><img class="inverse" src="kana/ashi.png" style="height: 3em"></td><td>folded hands</td><td>にじゅうあし</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/074.png" style="height: 3em"></td><td></td><td>javelin</td><td>いぐるみ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/075.png" style="height: 3em"></td><td></td><td>bow （in archery）</td><td>ゆみ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/076.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>bow （in archery）</td><td>ゆみへん</td><td>a variant of ⼸（ゆみ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/077.png" style="height: 3em"></td><td></td><td>pig’s head</td><td>けいがしら</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/078.png" style="height: 3em"></td><td></td><td>pig’s head</td><td>けいがしら</td><td>a variant of ⼹（けいがしら）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/079.png" style="height: 3em"></td><td></td><td>pig’s head</td><td>けいがしら</td><td>a variant of ⼹（けいがしら）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/080.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>hair-style, light rays</td><td>さんづくり</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/081.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>step, stride, street, to go</td><td>ぎょうにんべん</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/082.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>grass</td><td>くさかんむり</td><td>a variant of ⾋（くさ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/083.png" style="height: 3em"></td><td><img class="inverse" src="kana/nyou.png" style="height: 3em"></td><td>road, walk, to advance</td><td>しんにょう</td><td>a variant of ⾡（しんにょう）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/084.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>village, country, city</td><td>おおざと</td><td>a variant of ⾢（むら）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/085.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>hill, mound</td><td>こざとへん</td><td>a variant of ⾩（こざと）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/086.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>Katakana Tsu</td><td>つ</td><td></td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/087.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>heart, mind, spirit</td><td>りっしんべん</td><td>a variant of ⼼（こころ）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/088.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>hand</td><td>てへん</td><td>a variant of ⼿（て）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/089.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>water</td><td>さんずい</td><td>a variant of ⽔（みず）</td></tr>
+<tr><td>3</td><td><img class="inverse" src="kana/radical/090.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>beast</td><td>けものへん</td><td>a variant of ⽝（いぬ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/091.png" style="height: 3em"></td><td></td><td>heart, mind, spirit</td><td>こころ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/092.png" style="height: 3em"></td><td><img class="inverse" src="kana/ashi.png" style="height: 3em"></td><td>heart, mind, spirit</td><td>したごころ</td><td>a variant of ⼼（こころ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/093.png" style="height: 3em"></td><td></td><td>spear, weapon</td><td>ほこ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/094.png" style="height: 3em"></td><td></td><td>door</td><td>と</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/095.png" style="height: 3em"></td><td><img class="inverse" src="kana/tare.png" style="height: 3em"></td><td>door</td><td>とだれ</td><td>a variant of ⼾（と）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/096.png" style="height: 3em"></td><td></td><td>hand</td><td>て</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/097.png" style="height: 3em"></td><td></td><td>branch</td><td>しにょう</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/098.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>activity, to strike, hit</td><td>ぼくづくり</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/099.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>activity, to strike, hit</td><td>ぼくづくり</td><td>a variant of ⽁（ぼくづくり）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/100.png" style="height: 3em"></td><td></td><td>literature, letters</td><td>ぶん</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/101.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>big dipper, ladle, 18 liters</td><td>ますづくり</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/102.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>axe</td><td>おのづくり</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/103.png" style="height: 3em"></td><td></td><td>direction, flag</td><td>ほう</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/104.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>direction, flag</td><td>ほうへん</td><td>a variant of ⽅（ほう）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/105.png" style="height: 3em"></td><td></td><td>not</td><td>むにょう</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/106.png" style="height: 3em"></td><td></td><td>sun, day, time</td><td>ひ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/107.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>sun, day, time</td><td>ひへん</td><td>a variant of ⽇（ひ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/108.png" style="height: 3em"></td><td></td><td>to say</td><td>ひらび</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/109.png" style="height: 3em"></td><td></td><td>moon, month, period</td><td>つき</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/110.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>moon, month, period</td><td>つきへん</td><td>a variant of ⽉（つき）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/111.png" style="height: 3em"></td><td></td><td>meat, flesh</td><td>にくづき</td><td>a variant of ⾁（にく）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/112.png" style="height: 3em"></td><td></td><td>tree, wood</td><td>き</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/113.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>tree, wood</td><td>きへん</td><td>a variant of ⽊（き）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/114.png" style="height: 3em"></td><td></td><td>to lack, yawn</td><td>あくび</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/115.png" style="height: 3em"></td><td></td><td>to stop</td><td>とめる</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/116.png" style="height: 3em"></td><td></td><td>death & dying, to decompose</td><td>がつ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/117.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>death & dying, to decompose</td><td>がつへん</td><td>a variant of ⽍（がつ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/118.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>lance shaft, action</td><td>るまた</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/119.png" style="height: 3em"></td><td></td><td>not, mother</td><td>なかれ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/120.png" style="height: 3em"></td><td></td><td>to compare</td><td>くらべる</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/121.png" style="height: 3em"></td><td></td><td>hair</td><td>け</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/122.png" style="height: 3em"></td><td></td><td>family, clan</td><td>うじ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/123.png" style="height: 3em"></td><td><img class="inverse" src="kana/kigamae.png" style="height: 3em"></td><td>steam, air</td><td>きがまえ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/124.png" style="height: 3em"></td><td></td><td>water</td><td>みず</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/125.png" style="height: 3em"></td><td></td><td>fire</td><td>ひ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/126.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>fire</td><td>ひへん</td><td>a variant of ⽕（ひ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/127.png" style="height: 3em"></td><td><img class="inverse" src="kana/ashi.png" style="height: 3em"></td><td>fire</td><td>れっか</td><td>a variant of ⽕（ひ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/128.png" style="height: 3em"></td><td></td><td>claw, nail</td><td>つめ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/129.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>claw, nail</td><td>つめかんむり</td><td>a variant of ⽖（つめ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/130.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>claw, nail</td><td>つめかんむり</td><td>a variant of ⽖（つめ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/131.png" style="height: 3em"></td><td></td><td>father</td><td>ちち</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/132.png" style="height: 3em"></td><td></td><td>to mix</td><td>こう</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/133.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>split wood</td><td>しょうへん</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/134.png" style="height: 3em"></td><td></td><td>split wood</td><td>かた</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/135.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>split wood</td><td>かたへん</td><td>a variant of ⽚（かた）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/136.png" style="height: 3em"></td><td></td><td>fang, canine tooth</td><td>きば</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/137.png" style="height: 3em"></td><td></td><td>cow</td><td>うし</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/138.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>cow</td><td>うしへん</td><td>a variant of ⽜（うし）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/139.png" style="height: 3em"></td><td></td><td>dog</td><td>いぬ</td><td></td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/140.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>jewelry, jeweled king</td><td>おうへん</td><td>a variant of ⽟（たま）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/141.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>altar, festival, religious service</td><td>しめすへん</td><td>a variant of ⽰（しめす）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/142.png" style="height: 3em"></td><td></td><td>net</td><td>あみがしら</td><td>a variant of ⽹（あみ）</td></tr>
+<tr><td>4</td><td><img class="inverse" src="kana/radical/143.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>old, old-age</td><td>おいかんむり</td><td>a variant of ⽼（おいかんむり）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/144.png" style="height: 3em"></td><td></td><td>darkness</td><td>げん</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/145.png" style="height: 3em"></td><td></td><td>jewelry</td><td>たま</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/146.png" style="height: 3em"></td><td></td><td>melon</td><td>うり</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/147.png" style="height: 3em"></td><td></td><td>tile</td><td>かわら</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/148.png" style="height: 3em"></td><td></td><td>sweet</td><td>あまい</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/149.png" style="height: 3em"></td><td></td><td>birth, to be born, live</td><td>うまれる</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/150.png" style="height: 3em"></td><td></td><td>to use</td><td>もちいる</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/151.png" style="height: 3em"></td><td></td><td>rice paddy</td><td>た</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/152.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>rice paddy</td><td>たへん</td><td>a variant of ⽥（た）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/153.png" style="height: 3em"></td><td></td><td>bolt of cloth</td><td>ひき</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/154.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>bolt of cloth</td><td>ひきへん</td><td>a variant of ⽦（ひき）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/155.png" style="height: 3em"></td><td><img class="inverse" src="kana/tare.png" style="height: 3em"></td><td>sickness</td><td>やまいだれ</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/156.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>outspread legs, departure</td><td>はつがしら</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/157.png" style="height: 3em"></td><td></td><td>white</td><td>しろ</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/158.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>white</td><td>はくへん</td><td>a variant of ⽩（しろ）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/159.png" style="height: 3em"></td><td></td><td>skin, hide</td><td>けがわ</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/160.png" style="height: 3em"></td><td></td><td>plate, bowl</td><td>さら</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/161.png" style="height: 3em"></td><td></td><td>eye</td><td>め</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/162.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>eye</td><td>めへん</td><td>a variant of ⽬（め）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/163.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>eye</td><td>よこめ</td><td>a variant of ⽬（め）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/164.png" style="height: 3em"></td><td></td><td>halberd</td><td>ほこ</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/165.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>halberd</td><td>ほこへん</td><td>a variant of ⽭（ほこ）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/166.png" style="height: 3em"></td><td></td><td>arrow</td><td>や</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/167.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>arrow</td><td>やへん</td><td>a variant of ⽮（や）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/168.png" style="height: 3em"></td><td></td><td>stone</td><td>いし</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/169.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>stone</td><td>いしへん</td><td>a variant of ⽯（いし）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/170.png" style="height: 3em"></td><td></td><td>altar, festival, religious service</td><td>しめす</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/171.png" style="height: 3em"></td><td></td><td>footprint</td><td>じゅうのあし</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/172.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>grain</td><td>のぎへん</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/173.png" style="height: 3em"></td><td></td><td>hole, cave</td><td>あな</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/174.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>hole, cave</td><td>あなかんむり</td><td>a variant of ⽳（あな）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/175.png" style="height: 3em"></td><td></td><td>to stand</td><td>たつ</td><td></td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/176.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>to stand</td><td>たつへん</td><td>a variant of ⽴（たつ）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/177.png" style="height: 3em"></td><td></td><td>fang, canine tooth</td><td>きば</td><td>a variant of （きば）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/178.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>fang, canine tooth</td><td>きばへん</td><td>a variant of ⽛（きば）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/179.png" style="height: 3em"></td><td></td><td>water</td><td>したみず</td><td>a variant of ⽔（みず）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/180.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>net</td><td>あみがしら</td><td>a variant of ⽹（あみ）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/181.png" style="height: 3em"></td><td></td><td>net</td><td>あみがしら</td><td>a variant of ⽹（あみ）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/182.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>clothing</td><td>ころもへん</td><td>a variant of ⾐（ころも）</td></tr>
+<tr><td>5</td><td><img class="inverse" src="kana/radical/183.png" style="height: 3em"></td><td></td><td>not</td><td>むにょう</td><td>a variant of ⽆（むにょう）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/184.png" style="height: 3em"></td><td></td><td>bamboo</td><td>たけ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/185.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>bamboo</td><td>たけかんむり</td><td>a variant of ⽵（たけ）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/186.png" style="height: 3em"></td><td></td><td>rice</td><td>こめ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/187.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>rice</td><td>こめへん</td><td>a variant of ⽶（こめ）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/188.png" style="height: 3em"></td><td></td><td>thread</td><td>いと</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/189.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>thread</td><td>いとへん</td><td>a variant of ⽷（いと）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/190.png" style="height: 3em"></td><td></td><td>earthen jar</td><td>みずがめ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/191.png" style="height: 3em"></td><td></td><td>net</td><td>あみめ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/192.png" style="height: 3em"></td><td></td><td>sheep</td><td>ひつじ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/193.png" style="height: 3em"></td><td></td><td>sheep</td><td>ひつじ</td><td>a variant of ⽺（ひつじ）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/194.png" style="height: 3em"></td><td></td><td>feather, wing</td><td>はね</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/195.png" style="height: 3em"></td><td></td><td>feather, wing</td><td>はね</td><td>a variant of 羽（はね）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/196.png" style="height: 3em"></td><td></td><td>old, old-age</td><td>おいかんむり</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/197.png" style="height: 3em"></td><td></td><td>and also</td><td>しこうして</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/198.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>plow</td><td>らいすき</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/199.png" style="height: 3em"></td><td></td><td>ear</td><td>みみ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/200.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>ear</td><td>みみへん</td><td>a variant of ⽿（みみ）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/201.png" style="height: 3em"></td><td></td><td>writing brush</td><td>ふでづくり</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/202.png" style="height: 3em"></td><td></td><td>flesh, meat</td><td>にく</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/203.png" style="height: 3em"></td><td></td><td>retainer, minister</td><td>しん</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/204.png" style="height: 3em"></td><td></td><td>self</td><td>みずから</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/205.png" style="height: 3em"></td><td></td><td>to arrive, reach</td><td>いたる</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/206.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>to arrive, reach</td><td>いたるへん</td><td>a variant of ⾄（いたる）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/207.png" style="height: 3em"></td><td></td><td>mortar, quern</td><td>うす</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/208.png" style="height: 3em"></td><td></td><td>tongue</td><td>した</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/209.png" style="height: 3em"></td><td></td><td>contrary, to err</td><td>まいあし</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/210.png" style="height: 3em"></td><td></td><td>ship, boat</td><td>ふね</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/211.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>ship, boat</td><td>ふねへん</td><td>a variant of ⾈（ふね）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/212.png" style="height: 3em"></td><td></td><td>boundary</td><td>こん</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/213.png" style="height: 3em"></td><td></td><td>color</td><td>いろ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/214.png" style="height: 3em"></td><td></td><td>grass, plant</td><td>くさ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/215.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>tiger</td><td>とらがしら</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/216.png" style="height: 3em"></td><td></td><td>worm, insect, bug</td><td>むし</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/217.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>worm, insect, bug</td><td>むしへん</td><td>a variant of ⾍（むし）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/218.png" style="height: 3em"></td><td></td><td>blood</td><td>ち</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/219.png" style="height: 3em"></td><td><img class="inverse" src="kana/gyougamae.png" style="height: 3em"></td><td>to go</td><td>ぎょうがまえ</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/220.png" style="height: 3em"></td><td></td><td>clothing</td><td>ころも</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/221.png" style="height: 3em"></td><td></td><td>cover, west</td><td>にし</td><td></td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/222.png" style="height: 3em"></td><td></td><td>cover, west</td><td>にし</td><td>a variant of ⾑（にし）</td></tr>
+<tr><td>6</td><td><img class="inverse" src="kana/radical/223.png" style="height: 3em"></td><td></td><td>melon</td><td>うり</td><td>a variant of ⽠（うり）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/224.png" style="height: 3em"></td><td></td><td>to see</td><td>みる</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/225.png" style="height: 3em"></td><td></td><td>horn, corner</td><td>つの</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/226.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>horn, corner</td><td>つのへん</td><td>a variant of ⾓（つの）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/227.png" style="height: 3em"></td><td></td><td>words, to speak, say</td><td>げん</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/228.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>words, to speak, say</td><td>ごんべん</td><td>a variant of ⾔（げん）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/229.png" style="height: 3em"></td><td></td><td>valley</td><td>たに</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/230.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>valley</td><td>たにへん</td><td>a variant of ⾕（たに）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/231.png" style="height: 3em"></td><td></td><td>bean</td><td>まめ</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/232.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>bean</td><td>まめへん</td><td>a variant of ⾖（まめ）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/233.png" style="height: 3em"></td><td></td><td>pig</td><td>いのこ</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/234.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>badger</td><td>むじなへん</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/235.png" style="height: 3em"></td><td></td><td>shell, property, wealth</td><td>かい</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/236.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>shell, property, wealth</td><td>かいへん</td><td>a variant of ⾙（かい）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/237.png" style="height: 3em"></td><td></td><td>red</td><td>あか</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/238.png" style="height: 3em"></td><td></td><td>to run</td><td>はしる</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/239.png" style="height: 3em"></td><td><img class="inverse" src="kana/nyou.png" style="height: 3em"></td><td>to run</td><td>そうにょう</td><td>a variant of ⾛（はしる）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/240.png" style="height: 3em"></td><td></td><td>foot, leg</td><td>あし</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/241.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>foot, leg</td><td>あしへん</td><td>a variant of ⾜（あし）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/242.png" style="height: 3em"></td><td></td><td>body</td><td>み</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/243.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>body</td><td>みへん</td><td>a variant of ⾝（み）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/244.png" style="height: 3em"></td><td></td><td>vehicle, wheel, car</td><td>くるま</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/245.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>vehicle, wheel, car</td><td>くるまへん</td><td>a variant of ⾞（くるま）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/246.png" style="height: 3em"></td><td></td><td>bitter</td><td>からい</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/247.png" style="height: 3em"></td><td></td><td>Fifth zodiac sign, 7–9 A.M.</td><td>しんのたつ</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/248.png" style="height: 3em"></td><td></td><td>to advance, move ahead</td><td>しんにょう</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/249.png" style="height: 3em"></td><td></td><td>community</td><td>むら</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/250.png" style="height: 3em"></td><td></td><td>sake jar, bird</td><td>ひよみのとり</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/251.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>sake jar, bird</td><td>とりへん</td><td>a variant of ⾣（ひよみのとり）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/252.png" style="height: 3em"></td><td></td><td>to separate</td><td>のごめ</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/253.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>to separate</td><td>のごめへん</td><td>a variant of ⾤（のごめ）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/254.png" style="height: 3em"></td><td></td><td>village, (3.93 km)</td><td>さと</td><td></td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/255.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>village, (3.93 km)</td><td>さとへん</td><td>a variant of ⾥（さと）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/256.png" style="height: 3em"></td><td></td><td>retainer, minister</td><td>しん</td><td>a variant of ⾂（しん）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/257.png" style="height: 3em"></td><td></td><td>contrary, to err</td><td>まいあし</td><td>a variant of ⾇（まいあし）</td></tr>
+<tr><td>7</td><td><img class="inverse" src="kana/radical/258.png" style="height: 3em"></td><td></td><td>wheat</td><td>むぎ</td><td>a variant of ⿆（むぎ）</td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/259.png" style="height: 3em"></td><td></td><td>metal, gold, mineral</td><td>かね</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/260.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>metal, gold, mineral</td><td>かねへん</td><td>a variant of ⾦（かね）</td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/261.png" style="height: 3em"></td><td></td><td>long</td><td>ながい</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/262.png" style="height: 3em"></td><td><img class="inverse" src="kana/mongamae.png" style="height: 3em"></td><td>gate, door</td><td>もんがまえ</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/263.png" style="height: 3em"></td><td></td><td>hill</td><td>こざと</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/264.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>to capture</td><td>れいづくり</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/265.png" style="height: 3em"></td><td></td><td>small bird</td><td>ふるとり</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/266.png" style="height: 3em"></td><td></td><td>rain</td><td>あめ</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/267.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>rain</td><td>あめかんむり</td><td>a variant of ⾬（あめ）</td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/268.png" style="height: 3em"></td><td></td><td>blue, green</td><td>あお</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/269.png" style="height: 3em"></td><td></td><td>blue, green</td><td>あお</td><td>a variant of ⾭（あお）</td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/270.png" style="height: 3em"></td><td></td><td>wrong, non-</td><td>あらず</td><td></td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/271.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>food, to eat</td><td>しょくへん</td><td>a variant of ⾷（しょく）</td></tr>
+<tr><td>8</td><td><img class="inverse" src="kana/radical/272.png" style="height: 3em"></td><td></td><td>alike</td><td>せい</td><td>a variant of ⿑（せい）</td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/273.png" style="height: 3em"></td><td></td><td>face, surface</td><td>めん</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/274.png" style="height: 3em"></td><td></td><td>leather</td><td>つくりがわ</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/275.png" style="height: 3em"></td><td></td><td>leather</td><td>なめしがわ</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/276.png" style="height: 3em"></td><td></td><td>leek</td><td>にら</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/277.png" style="height: 3em"></td><td></td><td>sound, noise</td><td>おと</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/278.png" style="height: 3em"></td><td><img class="inverse" src="kana/tsukuri.png" style="height: 3em"></td><td>head, page</td><td>おおがい</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/279.png" style="height: 3em"></td><td></td><td>wind</td><td>かぜ</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/280.png" style="height: 3em"></td><td></td><td>to fly</td><td>とぶ</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/281.png" style="height: 3em"></td><td></td><td>food, to eat</td><td>しょく</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/282.png" style="height: 3em"></td><td></td><td>head</td><td>くび</td><td></td></tr>
+<tr><td>9</td><td><img class="inverse" src="kana/radical/283.png" style="height: 3em"></td><td></td><td>scent</td><td>かおり</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/284.png" style="height: 3em"></td><td></td><td>horse</td><td>うま</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/285.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>horse</td><td>うまへん</td><td>a variant of ⾺（うま）</td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/286.png" style="height: 3em"></td><td></td><td>bone</td><td>ほね</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/287.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>bone</td><td>ほねへん</td><td>a variant of ⾻（ほね）</td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/288.png" style="height: 3em"></td><td></td><td>high</td><td>たかい</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/289.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>long hair</td><td>かみかんむり</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/290.png" style="height: 3em"></td><td><img class="inverse" src="kana/mongamae.png" style="height: 3em"></td><td>fighting</td><td>たたかいがまえ</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/291.png" style="height: 3em"></td><td></td><td>herbs</td><td>においざけ</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/292.png" style="height: 3em"></td><td></td><td>tripod</td><td>れき</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/293.png" style="height: 3em"></td><td></td><td>demon</td><td>おに</td><td></td></tr>
+<tr><td>10</td><td><img class="inverse" src="kana/radical/294.png" style="height: 3em"></td><td></td><td>leather</td><td>なめしがわ</td><td>a variant of （なめしがわ）</td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/295.png" style="height: 3em"></td><td></td><td>fish</td><td>うお</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/296.png" style="height: 3em"></td><td><img class="inverse" src="kana/hen.png" style="height: 3em"></td><td>fish</td><td>うおへん</td><td>a variant of ⿂（うお）</td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/297.png" style="height: 3em"></td><td></td><td>bird</td><td>とり</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/298.png" style="height: 3em"></td><td></td><td>salt</td><td>しお</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/299.png" style="height: 3em"></td><td></td><td>deer</td><td>しか</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/300.png" style="height: 3em"></td><td></td><td>wheat</td><td>むぎ</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/301.png" style="height: 3em"></td><td></td><td>hemp</td><td>あさ</td><td></td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/302.png" style="height: 3em"></td><td><img class="inverse" src="kana/kanmuri.png" style="height: 3em"></td><td>hemp</td><td>あさかんむり</td><td>a variant of ⿇（あさ）</td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/303.png" style="height: 3em"></td><td></td><td>yellow</td><td>き</td><td>a variant of ⿈（き）</td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/304.png" style="height: 3em"></td><td></td><td>black</td><td>くろ</td><td>a variant of ⿊（くろ）</td></tr>
+<tr><td>11</td><td><img class="inverse" src="kana/radical/305.png" style="height: 3em"></td><td></td><td>turtle</td><td>かめ</td><td>a variant of ⿔（かめ）</td></tr>
+<tr><td>12</td><td><img class="inverse" src="kana/radical/306.png" style="height: 3em"></td><td></td><td>yellow</td><td>き</td><td></td></tr>
+<tr><td>12</td><td><img class="inverse" src="kana/radical/307.png" style="height: 3em"></td><td></td><td>millet</td><td>きび</td><td></td></tr>
+<tr><td>12</td><td><img class="inverse" src="kana/radical/308.png" style="height: 3em"></td><td></td><td>black</td><td>くろ</td><td></td></tr>
+<tr><td>12</td><td><img class="inverse" src="kana/radical/309.png" style="height: 3em"></td><td></td><td>embroider</td><td>ぬいとり</td><td></td></tr>
+<tr><td>12</td><td><img class="inverse" src="kana/radical/310.png" style="height: 3em"></td><td></td><td>tooth</td><td>は</td><td>a variant of ⿒（は）</td></tr>
+<tr><td>13</td><td><img class="inverse" src="kana/radical/311.png" style="height: 3em"></td><td></td><td>frog</td><td>かえる</td><td></td></tr>
+<tr><td>13</td><td><img class="inverse" src="kana/radical/312.png" style="height: 3em"></td><td></td><td>tripod</td><td>かなえ</td><td></td></tr>
+<tr><td>13</td><td><img class="inverse" src="kana/radical/313.png" style="height: 3em"></td><td></td><td>drum</td><td>つづみ</td><td></td></tr>
+<tr><td>13</td><td><img class="inverse" src="kana/radical/314.png" style="height: 3em"></td><td></td><td>rat, mouse</td><td>ねずみ</td><td></td></tr>
+<tr><td>14</td><td><img class="inverse" src="kana/radical/315.png" style="height: 3em"></td><td></td><td>nose</td><td>はな</td><td></td></tr>
+<tr><td>14</td><td><img class="inverse" src="kana/radical/316.png" style="height: 3em"></td><td></td><td>alike</td><td>せい</td><td></td></tr>
+<tr><td>15</td><td><img class="inverse" src="kana/radical/317.png" style="height: 3em"></td><td></td><td>tooth</td><td>は</td><td></td></tr>
+<tr><td>16</td><td><img class="inverse" src="kana/radical/318.png" style="height: 3em"></td><td></td><td>dragon</td><td>りゅう</td><td></td></tr>
+<tr><td>16</td><td><img class="inverse" src="kana/radical/319.png" style="height: 3em"></td><td></td><td>turtle</td><td>かめ</td><td></td></tr>
+<tr><td>17</td><td><img class="inverse" src="kana/radical/320.png" style="height: 3em"></td><td></td><td>flute</td><td>やく</td><td></td></tr>
+<tbody>
+
+</tbody>
+<tfoot>
+</tfoot>
+</table>
+
+</div>
+</div>
+</div>
+<div class="bodymargin">
+<hr class="dotted">
+<a id="backtop" href="#top">&#9650;</a>
+<div class="ashi"></div>
+</body>
+</html>

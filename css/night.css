@@ -3,7 +3,7 @@ max-height:1000000px;
 }
 
 body {
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 font-family: "Libre Franklin","Helvetica Neue",helvetica,arial,sans-serif;
 font-size: 100%;
 line-height: 1.6;
@@ -23,7 +23,7 @@ cursor: pointer;
 float:left;
 width:50%;
 text-align:center;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 margin-bottom:-1.6em;
 }
 
@@ -31,7 +31,7 @@ margin-bottom:-1.6em;
 float:right;
 width:50%;
 text-align:center;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 margin-bottom:-1.9em;
 }
 
@@ -98,7 +98,7 @@ list-style-type: none;
 height:4.3em;
 margin-top:-2.4em;
 margin-bottom:-1.8em;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 }
 
 @media screen and (max-width: 728px) {
@@ -316,7 +316,7 @@ top:auto;
 bottom:20px;
 outline:none;
 overflow:hidden;
-color:rgb(250, 250, 250);
+color:#fff;
 text-align:center;
 background-color:rgb(162, 161, 161);
 height:35px;
@@ -384,7 +384,7 @@ margin: 0 auto;
 li.sections2 {
 margin-right:0.5em;
 margin-left:0.5em;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 padding:0.5em;
 }
@@ -432,7 +432,7 @@ font-size:15px;
 margin-right:3px;
 margin-left:3px;
 line-height:350%;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -462,7 +462,7 @@ margin: 0;
 width: 98%;
 font-size:0.80em;
 border-collapse:collapse;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 margin-bottom:2em;
 margin-top:2em;
 margin-left:1em;
@@ -657,14 +657,14 @@ margin:0;
 td.dojgdeck,th.dojgdeck {
 vertical-align:top;
 padding:.8em;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
 td.dojgdeck:hover,th.dojgdeck:hover {
 vertical-align:top;
 padding:.8em;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -722,7 +722,7 @@ box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 
 #kanabox {
 width:90%;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 margin:auto;
 padding:.7em 2em 1em;
@@ -759,7 +759,7 @@ text-align:center;
 font-size:14px;
 color:rgb(37, 37, 37);
 width:60%;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 padding:6px;
 }
@@ -810,7 +810,7 @@ margin-bottom:4em;
 width:200px;
 height:auto;
 cursor:pointer;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 box-shadow:1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -900,7 +900,7 @@ font-size:1.2em;
 padding-top:8px;
 margin:0 auto;
 font-weight:500;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 }
 
 label.corchoice:hover {
@@ -1011,7 +1011,7 @@ padding-top:0.5em;
 
 input[type="radio"][id="blue"]:checked + label {
 background-color:rgb(81, 81, 81);
-color:rgb(250, 250, 250);
+color:#fff;
 box-shadow:none;
 }
 
@@ -1021,7 +1021,7 @@ display:none;
 
 input[type="radio"][id="red"]:checked + label {
 background-color:rgb(81, 81, 81);
-color:rgb(250, 250, 250);
+color:#fff;
 box-shadow:none;
 }
 
@@ -1031,7 +1031,7 @@ display:none;
 
 input[type="radio"][id="green"]:checked + label {
 background-color:rgb(81, 81, 81);
-color:rgb(250, 250, 250);
+color:#fff;
 box-shadow:none;
 }
 
@@ -1041,7 +1041,7 @@ display:none;
 
 input[type="radio"][id="yellow"]:checked + label {
 background-color:rgb(81, 81, 81);
-color:rgb(250, 250, 250);
+color:#fff;
 box-shadow:none;
 }
 
@@ -1058,7 +1058,7 @@ width:14em;
 height:26em;
 float:left;
 margin:0.25em;
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 font-size:1em;
 line-height:1.6;
 box-shadow:2px 2px 2px 2px rgba(0,0,0,0.12);
@@ -1153,7 +1153,7 @@ display: block;
 .whitecontentdrop a:hover {
 display: block;
 background-color:rgb(81, 81, 81);
-color:rgb(250, 250, 250);
+color:#fff;
 }
 
 .mangamain {
@@ -1168,7 +1168,7 @@ padding-right: 4px;
 padding-left: 4px;
 vertical-align: top;
 margin-right: 1px;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -1181,7 +1181,7 @@ padding-right: 4px;
 padding-left: 4px;
 vertical-align: top;
 margin-left: -1px;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -1192,7 +1192,7 @@ padding: 15px;
 margin-top: 20px;
 line-height: 180%;
 text-align: left;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -1214,7 +1214,7 @@ text-align: center;
 font-size: 18px;
 margin-top: 20px;
 padding: 3px;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -1237,7 +1237,7 @@ vertical-align: top;
 padding-left: 10px;
 padding-right: 10px;
 margin: 15px;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 box-shadow: 1px 2px 2px 1px rgba(0,0,0,0.12), 1px 2px 2px 1px rgba(0,0,0,0.24);
 }
 
@@ -1279,7 +1279,13 @@ padding:0.9em;
 color: rgba(0, 0, 0, 0.68);
 font-size:1.1em;
 font-weight:100;
-letter-spacing: 0.3em;
+letter-spacing: 0.3em;	
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 .modechange a:hover {
@@ -1303,6 +1309,12 @@ color: rgba(0, 0, 0, 0.68);
 font-size:1em;
 font-weight:100;
 letter-spacing: 0.25em;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
 }
 
 .modechange2 a:hover {
@@ -1610,7 +1622,7 @@ font-weight:600;
 }
 
 .gyou {
-color: rgb(250, 250, 250);
+color: #fff;
 font-size:2em;
 font-weight:600;
 background-color: rgb(37, 37, 37);
@@ -1637,7 +1649,7 @@ font-size:1.2em;
 }
 
 span.sanshou {
-color: rgb(250, 250, 250);
+color: #fff;
 background-color: rgb(37, 37, 37);
 border-radius: 0.1em;
 }
@@ -1712,7 +1724,7 @@ border: 0.1em solid rgb(0, 0, 0);
 }
 
 .colour9 {
-background-color:rgb(250, 250, 250);
+background-color:#fff;
 color:rgb(148, 16, 39);
 font-size:1em;
 font-weight:600;
@@ -1810,7 +1822,7 @@ left:0;
 bottom:0;
 height:auto;
 width:100%;
-color: rgb(250, 250, 250);
+color: #fff;
 background-color: rgb(37, 37, 37);
 overflow:auto;
 }
@@ -1871,7 +1883,7 @@ margin:20px auto;
 padding:0 1.5rem;
 letter-spacing: 0.04em;
 line-height: 1.8em;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 font-family: "Libre Franklin","Helvetica Neue",helvetica,arial,sans-serif;
 font-size: 100%;
 line-height: 1.63;

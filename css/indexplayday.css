@@ -3,7 +3,7 @@ max-height:1000000px;
 }
 
 body {
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 font-family: "Libre Franklin","Helvetica Neue",helvetica,arial,sans-serif;
 font-size: 100%;
 line-height: 1.63;
@@ -1282,7 +1282,7 @@ font-weight:600;
 color: rgb(37, 37, 37);
 font-size:2em;
 font-weight:600;
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 border-radius: 0.1em;
 padding:0.2em;
 }
@@ -1307,7 +1307,7 @@ font-size:1.2em;
 
 span.sanshou {
 color: rgb(37, 37, 37);
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 border-radius: 0.1em;
 }
 
@@ -1539,7 +1539,7 @@ filter: invert(91.5%);
 padding-bottom:1em;
 }
 div.bottomhanko{
-background-color: rgb(250, 250, 250);
+background-color: #fff;
 }
 
 pre.niwasa {
@@ -1569,7 +1569,7 @@ top:auto;
 bottom:20px;
 outline:none;
 overflow:hidden;
-color:rgb(250, 250, 250);
+color:#fff;
 text-align:center;
 background-color:rgb(162, 161, 161);
 height:35px;

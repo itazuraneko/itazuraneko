@@ -1,38 +1,47 @@
-
-function set_bookmark() {
-	localStorage.setItem('bm_' + location.pathname, window.scrollY);
-	load_bookmark();
-}
-
-function load_bookmark() {
-	pos = localStorage.getItem('bm_' + location.pathname);
-	if( ! pos) {
-		return;
-	}
-	
-	var div = document.getElementById('bookmark');
-	if( ! div) {
-		var div = document.createElement('div');
-		document.body.appendChild(div);
-	}
-	div.id = 'bookmark';
-	div.style.top = pos + 'px';
-	div.style.display = 'block';
-	div.addEventListener('click', remove_bookmark);
-	div.scrollIntoView();
-}
-
-function remove_bookmark() {
-	var div = document.getElementById('bookmark');
-	div.style.display = 'none';
-	localStorage.removeItem('bm_' + location.pathname);
-}
-
-document.onkeypress = function(e) { // doesn't have to be "e"
-	if(e.which == 98) {
-		set_bookmark();
-	}
-};
-
-
-onload = load_bookmark;
+(function bookmarks() {
+    bkmk = {
+        pos: 0,
+        div: undefined,
+        set: function() {
+            if ('scrollRestoration' in history) {
+              // Jump to bookmark on refresh/reload.
+              history.scrollRestoration = 'manual';
+            }
+            localStorage.setItem('bm_' + location.pathname, window.scrollY);
+            this.get();
+        },
+        get: function() {
+            this.pos = localStorage.getItem('bm_' + location.pathname);
+            if(!this.pos) return;
+            
+            if(!this.div) {
+                this.div = document.createElement('div');
+                this.div.id = 'bookmark';
+                this.div.addEventListener('click', function() { bkmk.rm(); });
+                this.div.style.display = 'block';
+                document.body.appendChild(this.div);
+            }
+            this.div.style.top = this.pos + 'px';
+            this.div.scrollIntoView(true);
+        },
+        rm: function() {
+            var div = document.getElementById('bookmark');
+            div.style.display = 'none'
+            localStorage.removeItem('bm_' + location.pathname);
+        }
+    };
+    
+    window.addEventListener('load', function() { console.log("load event"); bkmk.get(); });
+    
+    document.addEventListener('keypress', function(e) {
+        if(e.which == 98) { // b key
+            bkmk.set();
+        }
+    });
+    
+    document.addEventListener('touchstart', function(e) {
+        if (e.touches.length === 2) {
+            bkmk.set();
+      }
+    });
+}())
