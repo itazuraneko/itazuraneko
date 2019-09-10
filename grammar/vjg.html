@@ -1,0 +1,3954 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>visualizing japanese grammar</title>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="../css/gridtop2.css" title="default">
+<link rel="alternate stylesheet" href="../css/night.css" title="alternate">
+<script type="text/javascript" src="../js/styleswitcher.js"></script>
+</head>
+<body>
+<a id="top"></a>
+
+
+<div class="mobnav-left">
+<ul class="mobnav-links">
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../learn/learnmain.html">学習</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link-p" href="grammarmain.html">文法</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../library/librarymain.html">図書館</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../updates.html">日誌</a>
+</li>
+</ul>
+</div>
+
+<div class="mobnav-right">
+<ul class="mobnav-links">
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../horon/horonmain.html">補論</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../threads.html">掲示板</a>
+</li>
+<li class="mobnav-link-item">
+<a class="mobnav-link" href="../index.html">ホーム</a>
+</li>
+</ul>
+</div>
+
+
+<div class="topnav-links-container">
+<a href="../index.html"><img src="../hanko.png" id="itazura"></a>
+<ul class="topnav-links">
+<li class="topnav-link-item">
+<a class="topnav-link-eng">learn</a><br>
+<a class="topnav-link" href="../learn/learnmain.html">学習</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">grammar</a><br>
+<a class="topnav-link-p" href="grammarmain.html">文法</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">library</a><br>
+<a class="topnav-link" href="../library/librarymain.html">図書館</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">updates</a><br>
+<a class="topnav-link" href="../updates.html">日誌</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">misc.</a><br>
+<a class="topnav-link" href="../horon/horonmain.html">補論</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">threads</a><br>
+<a class="topnav-link" href="../threads.html">掲示板</a>
+</li>
+<li class="topnav-link-item">
+<a class="topnav-link-eng">home</a><br>
+<a class="topnav-link" href="../index.html">ホーム</a>
+</li>
+</ul>
+</div>
+</div>
+<div style="clear:both"></div>
+<hr class="brush">
+<div class="modechange"><a href="#" onclick="setActiveStyleSheet('default'); return false;">night</a></div>
+<div class="modechange"><a href="#" onclick="setActiveStyleSheet('alternate'); return false;">day</a></div>
+<div class="modechange2"><a href="https://www2.gwu.edu/~eall/vjg/vjghomepage/vjghome.htm">original</a></div>
+<div class="bodymargin">
+<p><a class="underscore" href="../index.html">ホーム</a> → <a class="underscore" href="grammarmain.html">文法</a> → vjg</p>
+<h1>Visualizing Japanese grammar</h1>
+<hr class="dotted">
+<table>
+<tr><td><a class="underscore" href="#Unit 01 - Sentence types">01. Sentence types</a></td><td><a class="underscore" href="#Unit 34 - Elements appearing with negative endings">34. Elements appearing with negative endings</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 02 - Word order">02. Word order</a></td><td><a class="underscore" href="#Unit 35 - More on wh expressions">35. More on wh expressions</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 03 - Simple noun phrases">03. Simple noun phrases</a></td><td><a class="underscore" href="#Unit 36 - Tentative forms">36. Tentative forms</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 04 - Spatial relations">04. Spatial relations</a></td><td><a class="underscore" href="#Unit 37 - Complex noun phrases">37. Complex noun phrases</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 05 - Adjectives">05. Adjectives</a></td><td><a class="underscore" href="#Unit 38 - Nominalization 1">38. Nominalization 1</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 06 - Location particles">06. Location particles</a></td><td><a class="underscore" href="#Unit 39 - N-desu">39. んです</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 07 - Transitivity 1">07. Transitivity 1</a></td><td><a class="underscore" href="#Unit 40 - Quoting statements and assertions">40. Quoting statements and assertions</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 08 - Particle wa">08. Particle は</a></td><td><a class="underscore" href="#Unit 41 - Source of information 1">41. Source of information 1</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 09 - Particle mo">09. Particle も</a></td><td><a class="underscore" href="#Unit 42 - Source of information 2">42. Source of information 2</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 10 - Particles in communication">10. Particles in communication</a></td><td><a class="underscore" href="#Unit 43 - Purpose phrases 2">43. Purpose phrases 2</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 11 - Demonstrative pronouns">11. Demonstrative pronouns</a></td><td><a class="underscore" href="#Unit 44 - Sou vs. You">44. そう vs. よう</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 12 - Counters">12. Counters</a></td><td><a class="underscore" href="#Unit 45 - Quoting requests">45. Quoting requests</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 13 - Wh questions">13 - Wh questions</a></td><td><a class="underscore" href="#Unit 46 - Comparison of events">46. Comparison of events</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 14 - Expressing change of state">14. Expressing change of state</a></td><td><a class="underscore" href="#Unit 47 - Patterns of uncertainty">47. Patterns of uncertainty</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 15 - Measuring and telling time">15. Measuring and telling time</a></td><td><a class="underscore" href="#Unit 48 - Two more conditionals">48. Two more conditionals</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 16 - Verbs and noun phrases 1">16. Verbs and noun phrases 1</a></td><td><a class="underscore" href="#Unit 49 - Verbs of giving">49. Verbs of giving</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 17 - Verbs and noun phrases 2">17. Verbs and noun phrases 2</a></td><td><a class="underscore" href="#Unit 50 - Nominalization 2">50. Nominalization 2</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 18 - Adverbs and modifiers of nouns">18. Adverbs and modifiers of nouns</a></td><td><a class="underscore" href="#Unit 51 - Tense">51. Tense</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 19 - Speech styles">19. Speech styles</a></td><td><a class="underscore" href="#Unit 52 - No and koto">52. の and こと</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 20 - Verbal conjugations">20. Verbal conjugations</a></td><td><a class="underscore" href="#Unit 53 - Patterns of consequence">53. Patterns of consequence</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 21 - Cause and effect">21. Cause and effect</a></td><td><a class="underscore" href="#Unit 54 - Temo">54. ても</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 22 - Connecting sentences">22. Connecting sentences</a></td><td><a class="underscore" href="#Unit 55 - Permission and prohibition">55. Permission and prohibition</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 23 - Continuative 1">23. Continuative 1</a></td><td><a class="underscore" href="#Unit 56 - Honorifics">56. Honorifics</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 24 - Directional verbs">24. Directional verbs</a></td><td><a class="underscore" href="#Unit 57 - Apologies and thanks">57. Apologies and thanks</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 25 - Continuative 2">25. Continuative 2</a></td><td><a class="underscore" href="#Unit 58 - Requests and commands">58. Requests and commands</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 26 - Describing clothing">26. Describing clothing</a></td><td><a class="underscore" href="#Unit 59 - Passive">59. Passive</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 27 - Comparison of objects">27. Comparison of objects</a></td><td><a class="underscore" href="#Unit 60 - Adversity passive">60. Adversity passive</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 28 - Combining particles">28. Combining particles</a></td><td><a class="underscore" href="#Unit 61 - Patterns of control 1">61. Patterns of control 1</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 29 - Expressions of desire">29. Expressions of desire</a></td><td><a class="underscore" href="#Unit 62 - Patterns of control 2">62. Patterns of control 2</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 30 - Probability">30. Probability</a></td><td><a class="underscore" href="#Unit 63 - Easy Understanding Japanese: Transitivity 2">63. Easy Understanding Japanese: Transitivity 2</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 31 - Temporal clauses with nagara">31. Temporal clauses with ながら</a></td><td><a class="underscore" href="#Unit 64 - Differences between Te aru and te iru">64. Differences between てある and ている</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 32 - Purpose phrases 1">32. Purpose phrases 1</a></td><td><a class="underscore" href="#Unit 65 - Male and female differences">65. Male and female differences</a></td></tr>
+<tr><td><a class="underscore" href="#Unit 33 - Listing options">33. Listing options</a></td><td><a class="underscore" href="#Unit 66 - Common errors">66. Common errors</a></td></tr>
+</table>
+<hr class="dotted">
+
+<span id="Unit 01 - Sentence types"></span>
+<div class="unitname">Unit 01 - Sentence types</div>
+<div class="container2">
+<div class="ran2">
+<a href="vjg/lessons/lesson01.html"><img class="youtubethumb" src="vjg/lessonimage/lesson01.jpg"></a>
+</div>
+<div class="ran3">
+This unit explains three basic types of sentences in Japanese: those ending in a noun phrase and the copula, those ending in an adjective (and optionally the copula), and those ending in a verb.
+<div><h3><label class="vocab" for="01">show / hide vocabulary</label></h3></div>
+<input id="01" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">小さい (ちいさい) small</li>
+<li class="words">強い (つよい) strong</li>
+<li class="words">おもしろい interesting</li>
+<li class="words">はやい early</li>
+<li class="words">若い (わかい) </li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">元気 (げんき) energetic</li>
+<li class="words">健康 (けんこう) healthy</li>
+</ul>
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<li class="words">乗って (のって) ride and</li>
+<li class="words">上ります (のぼります) go up;</li>
+<li class="words">行きます (いきます) go</li>
+<li class="words">やっつけます beat up</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">あれ that</li>
+<li class="words">おわん cup</li>
+<li class="words">川 (かわ) river</li>
+<li class="words">男の子 (おとこのこ) boy</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">名前 (なまえ) name</li>
+<li class="words">出身 (しゅっしん) place of origin</li>
+<li class="words">三年生 (さんねんせい) third-year student</li>
+<li class="words">専攻 (せんこう) major</li>
+<li class="words">文学 (ぶんがく) literature</li>
+<li class="words">クラス class</li>
+<li class="words">朝 (あさ) morning</li>
+<li class="words">昨日 (きのう) yesterday</li>
+<li class="words">雪 (ゆき) snow</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">晴れ (はれ) sunny weather</li>
+<li class="words">風 (かぜ) wind</li>
+<li class="words">学生 (がくせい) student</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…が (subject marker)</li>
+<li class="words">…は (topic marker)</li>
+<li class="words">…を (direct object marker)</li>
+<li class="words">とても very</li>
+<li class="words">でも but</li>
+<li class="words">私の名前 (なまえ) my name</li>
+<li class="words">文学（ぶんがく）のクラス literature class</li>
+<li class="words">ちょっと a little</li>
+<li class="words">…まで up to</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 02 - Word order"></span>
+<div class="unitname">Unit 02 - Word order</div>
+<div class="container2">
+<div class="ran2">
+<a href="vjg/lessons/lesson02.html"><img class="youtubethumb" src="vjg/lessonimage/lesson02.jpg"></a>
+</div>
+<div class="ran3">
+This unit explains that the verb must appear last in a Japanese sentence. The exact word order of noun phrases is not as important, so long as they appear before the verb and are accompanied by correct particles.
+<p>See also Unit 20.</p>
+<div><h3><label class="vocab" for="02">show / hide vocabulary</label></h3></div>
+<input id="02" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">捕まえます (つかまえます) capture</li>
+<li class="words">逃げます (にげます) escape</li>
+<li class="words">買います (かいます) buy</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">ねこ cat</li>
+<li class="words">ねずみ mouse</li>
+<li class="words">デパート department store</li>
+<li class="words">セーター sweater</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…が but</li>
+<li class="words">…で at</li>
+<li class="words">…か (question)</li>
+<li class="words">何 (なに) what</li>
+<li class="words">買いたかった (かいたかった) wanted to buy</li>
+<li class="words">買えません (かえません) cannot buy</li>
+<li class="words">買えたら (かえたら) if you can buy</li>
+<li class="words">買ってください (かってください) please buy</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 03 - Simple noun phrases"></span>
+<div class="unitname">Unit 03 - Simple noun phrases</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson03.html"><img class="youtubethumb" src="vjg/lessonimage/lesson03.jpg"></a></div>
+<div class="ran3">This unit explains how to form simple noun phrases of the types [noun + の + head noun] and [adjective + head noun].<p>See also Units 4 and 37.</p>
+<div><h3><label class="vocab" for="03">show / hide vocabulary</label></h3></div>
+<input id="03" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">いい good</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">受ける (うける) receive (direct-style form)</li>
+<li class="words">座っている (すわっている) be sitting (direct-style form)</li>
+<li class="words">買います (かいます) buy</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">学生 (がくせい) student</li>
+<li class="words">両親 (りょうしん) parents</li>
+<li class="words">テスト test</li>
+<li class="words">あそこ thereスーツケース suit case</li>
+<li class="words">大学 (だいがく) university</li>
+<li class="words">車 (くるま) car</li>
+<li class="words">僕 (ぼく) I (by a man)</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">後ろ (うしろ) back</li>
+<li class="words">右 (みぎ) right side</li>
+<li class="words">左 (ひだり) left side</li>
+<li class="words">次 (つぎ) next</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">クラス class</li>
+<li class="words">ロシア語 (ロシアご) Russian language</li>
+<li class="words">高校 (こうこう) high school</li>
+<li class="words">カリフォルニア California</li>
+<li class="words">生徒 (せいと) pupil</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">七階 (ななかい) seventh floor</li>
+<li class="words">部屋 (へや) room</li>
+<li class="words">医者 (いしゃ) doctor</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">オランダ人 (オランダじん) Dutch person</li>
+<li class="words">母親 (ははおや) mother</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">一万ドル (いちまんドル) 10,000 dollars</li>
+<li class="words">…君 (くん) Mr. (for a young man)</li>
+<li class="words">…さん Mr./Ms.</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 04 - Spatial relations"></span>
+<div class="unitname">Unit 04 - Spatial relations</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson04.html"><img class="youtubethumb" src="vjg/lessonimage/lesson04.jpg"></a></div>
+<div class="ran3">This unit explains that spatial relations in Japanese are expressed with noun phrases in the form of [reference point + の + relative position] as in 私の後ろ "behind me."<p>See also Unit 3.</p>
+<div><h3><label class="vocab" for="04">show / hide vocabulary</label></h3></div>
+<input id="04" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">います be present</li>
+<li class="words">あります exist (inanimate)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">前 (まえ) front</li>
+<li class="words">後ろ (うしろ) back</li>
+<li class="words">右 (みぎ) right</li>
+<li class="words">左 (ひだり) left</li>
+<li class="words">上 (うえ) above</li>
+<li class="words">下 (した) below</li>
+<li class="words">横 (よこ) side</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">隣 (となり) neighboring space</li>
+<li class="words">建物 (たてもの) building</li>
+<li class="words">ホテル hotel</li>
+<li class="words">デパート department store</li>
+<li class="words">向こう (むこう) the other side</li>
+<li class="words">病院 (びょういん) hospital</li>
+<li class="words">先 (さき) ahead</li>
+<li class="words">手前 (てまえ) this side</li>
+<li class="words">おばあさん grandmother</li>
+<li class="words">間 (あいだ) space between</li>
+<li class="words">辞書 (じしょ) dictionary</li>
+<li class="words">ドア door</li>
+<li class="words">部屋 (へや) room</li>
+<li class="words">一番 (いちばん) number one</li>
+<li class="words">奥 (おく) interior</li>
+<li class="words">本棚 (ほんだな) book shelf</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">どこ where</li>
+<li class="words">…に (marker of a location)
+<li class="words">…か (question)</li>
+<li class="words">誰 (だれ) who</li>
+<li class="words">…と and</li>
+<li class="words">この this (modifies a noun)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 05 - Adjectives"></span>
+<div class="unitname">Unit 05 - Adjectives</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson05.html"><img class="youtubethumb" src="vjg/lessonimage/lesson05.jpg"></a></div>
+<div class="ran3">This unit first explains two types of adjectives: い-adjectives and な-adjectives. In addition, it explains the properties of adjective-like nouns that are somewhat difficult to distinguish from な-adjecitves.<p>See also Units 18, 19, and 22.</p>
+<div><h3><label class="vocab" for="05">show / hide vocabulary</label></h3></div>
+<input id="05" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">広い (ひろい) spacious</li>
+<li class="words">大きい (おおきい) big</li>
+<li class="words">深い (ふかい) deep</li>
+<li class="words">重い (おもい) heavy</li>
+<li class="words">軽い (かるい) light</li>
+<li class="words">やさしい gentle</li>
+</ul>
+<li class="words">な-adjectives:</li>
+<ul class="wordlist">
+<li class="words">安全 (あんぜん) safe</li>
+<li class="words">簡単 (かんたん) simple</li>
+<li class="words">失礼 (しつれい) rude</li>
+<li class="words">フレッシュ fresh</li>
+<li class="words">キュート cute</li>
+<li class="words">カジュアル casual</li>
+<li class="words">大事 (だいじ) precious</li>
+<li class="words">健康 (けんこう) healthy</li>
+<li class="words">歴史的 (れきしてき) historical</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">駅前 (えきまえ) area in front of a station</li>
+<li class="words">道路 (どうろ) road</li>
+<li class="words">問題 (もんだい) problem</li>
+<li class="words">人間 (にんげん) human being</li><li class="words">グレー gray</li>
+<li class="words">かさ umbrella</li>
+<li class="words">ソロ solo</li>
+<li class="words">演奏 (えんそう) musical performance</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">木 (き) tree</li>
+<li class="words">最大 (さいだい) largest</li>
+<li class="words">反対 (はんたい) opposite</li>
+<li class="words">意見 (いけん) opinion</li>
+<li class="words">ただ free of charge</li>
+<li class="words">地図 (ちず) map</li>
+<li class="words">三角 (さんかく) triangle</li>
+<li class="words">本当 (ほんとう) true</li>
+<li class="words">気持ち (きもち) feeling</li>
+<li class="words">歴史 (れきし) history</li>
+<li class="words">本 (ほん) book</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">こんな this kind of</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 06 - Location particles"></span>
+<div class="unitname">Unit 06 - Location particles</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson06.html"><img class="youtubethumb" src="vjg/lessonimage/lesson06.jpg"></a></div>
+<div class="ran3">This unit explains the particles へ, に, で, から, and まで. In addition, the so-called "traversal" use of the particle を is explained.</p>
+<div><h3><label class="vocab" for="06">show / hide vocabulary</label></h3></div>
+<input id="06" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行きます (いきます) go</li>
+<li class="words">います be present</li>
+<li class="words">帰ります (かえります) return home</li>
+<li class="words">します do</li>
+<li class="words">買います (かいます) buy</li>
+<li class="words">話します (はなします) talk</li>
+<li class="words">読みます (よみます) read</li>
+<li class="words">来ます (きます) come</li>
+<li class="words">出ます (でます) leave</li>
+<li class="words">渡ります (わたります) cross</li>
+<li class="words">曲がってください (まがってください) please turn</li>
+<li class="words">行ってください (いってください) please go</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">学校 (がっこう) school</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">家 (うち) house</li>
+<li class="words">サッカー soccer</li>
+<li class="words">公園 (こうえん) park</li>
+<li class="words">体育館 (たいいくかん) gymnasium</li>
+<li class="words">バスケットボール basket ball</li>
+<li class="words">郵便局 (ゆうびんきょく) post office</li>
+<li class="words">切手 (きって) stamp</li>
+<li class="words">教室 (きょうしつ) classroom</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">薬屋 (くすりや) drug store</li>
+<li class="words">かぜ薬 (かぜぐすり) cold medicine</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">新聞 (しんぶん) newspaper</li>
+<li class="words">アパート apartment (building)</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">大学 (だいがく) university</li>
+<li class="words">テニスコート tennis court</li>
+<li class="words">テニス tennis</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">道 (みち) road</li>
+<li class="words">パーティ party</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">ここ here</li>
+<li class="words">橋 (はし) bridge</li>
+<li class="words">角 (かど) corner</li>
+<li class="words">右 (みぎ) right</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">たくさん a lot</li>
+<li class="words">いくら how much</li>
+<li class="words">この this (modifies a noun)</li>
+<li class="words">まっすぐ straight</li>
+<li class="words">もう already</li>
+<li class="words">…と with</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 07 - Transitivity 1"></span>
+<div class="unitname">Unit 07 - Transitivity 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson07.html"><img class="youtubethumb" src="vjg/lessonimage/lesson07.jpg"></a></div>
+<div class="ran3">This unit explains the proto-typical distinction between transitive and intransitive verbs. Apparent exceptions to the principle are also explained<p>See also Units 16, 29, 36, 53, and 63.</p>
+<div><h3><label class="vocab" for="07">show / hide vocabulary</label></h3></div>
+<input id="07" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">欲しい (ほしい) want</li>
+<li class="words">食べたい (たべたい) want to eat</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">好き (すき) like</li>
+<li class="words">嫌い (きらい) dislike</li>
+<li class="words">必要 (ひつよう) need</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">押します (おします) push</li>
+<li class="words">開けます (あけます) open</li>
+<li class="words">食べます (たべます) eat</li>
+<li class="words">作ります (つくります) make</li>
+<li class="words">読みます (よみます) read</li>
+<li class="words">見ます (みます) watch</li>
+<li class="words">寝ます (ねます) sleep</li>
+<li class="words">笑います (わらいます) laugh</li>
+<li class="words">あります have</li>
+<li class="words">出来ます (できます) can do</li>
+<li class="words">いります need</li>
+<li class="words">分かります (わかります) understand</li>
+<li class="words">たたきます hit</li>
+<li class="words">走ります (はしります) run</li>
+<li class="words">見えます (みえます) be visible</li>
+<li class="words">聞こえます (きこえます) be audible</li>
+<li class="words">食べられます (たべられます) can eat</li>
+<li class="words">作ってあります (つくってあります) have made</li>
+<li class="words">言っている (いっている) be saying</li>
+<li class="words">分かろうとします (わかろうとします) try to understand</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">私 (わたし) I</li>
+<li class="words">ベル bell</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">ドア door</li>
+<li class="words">ステーキ steak</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">ケーキ cake</li>
+<li class="words">新聞 (しんぶん) newspaper</li>
+<li class="words">ルームメート roommate</li>
+<li class="words">テレビ TV</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">子どもたち (こどもたち) children</li>
+<li class="words">コンピューター computer</li>
+<li class="words">国際電話 (こくさいでんわ) international call</li>
+<li class="words">パスワード password</li>
+<li class="words">車 (くるま) car</li>
+<li class="words">山 (やま) mountain</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">音 (おと) sound</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">目 (め) eye</li>
+<li class="words">魚 (さかな) fish</li>
+<li class="words">すし sushi</li>
+<li class="words">サラダ salad</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">…から from</li></li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 08 - Particle wa"></span>
+<div class="unitname">Unit 08 - Particle は</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson08.html"><img class="youtubethumb" src="vjg/lessonimage/lesson08.jpg"></a></div>
+<div class="ran3">This unit explains that the main function of the particle は is to link related sentences into a coherent passage. </p>
+<div><h3><label class="vocab" for="08">show / hide vocabulary</label></h3></div>
+<input id="08" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行きます (いきます) go</li>
+<li class="words">買います (かいます) buy</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">今朝 (けさ) this morning</li>
+<li class="words">郵便局 (ゆうびんきょく) post office</li>
+<li class="words">切手 (きって) postal stamp</li>
+<li class="words">図書館 (としょかんlibrary</li>
+<li class="words">公園 (こうえん) park</li>
+<li class="words">家 (うち) house</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">名前 (なまえ) name</li>
+<li class="words">専攻 (せんこう) major</li>
+<li class="words">歴史 (れきし) history</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…へ to</li>
+<li class="words">…で at</li>
+<li class="words">あ (interjection indicating realization)</li>
+<li class="words">それから and then</li></li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 09 - Particle mo"></span>
+<div class="unitname">Unit 09 - Particle も</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson09.html"><img class="youtubethumb" src="vjg/lessonimage/lesson09.jpg"></a></div>
+<div class="ran3">This unit explains that the particle も adds a thing to a set of items that meet a certain condition. It also shows that the function and the distribution of the particle mo are very similar to those of the particle は.<p>See also Units 8 and 55.</p>
+<div><h3><label class="vocab" for="09">show / hide vocabulary</label></h3></div>
+<input id="09" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">いい OK</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行きます (いきます) go</li>
+<li class="words">います be present</li>
+<li class="words">食べます (たべます) eat</li>
+<li class="words">結婚します (けっこんします) get married</li>
+<li class="words">勉強します (べんきょうします) study</li>
+<li class="words">いけません is not OK</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">公園 (こうえん) park</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">家 (うち) house</li>
+<li class="words">肉 (にく) meat</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">魚 (さかな) fish</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">大学院生 (だいがくいんせい) graduate student</li>
+<li class="words">教師 (きょうし) instructor</li>
+<li class="words">学生 (がくせい) student</li>
+<li class="words">辞書 (じしょ) dictionary</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">二時間 (にじかん) two hours</li>
+<li class="words">…と and</li>
+<li class="words">…で (variant form of the copula です)</li></li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 10 - Particles in communication"></span>
+<div class="unitname">Unit 10 - Particles in communication</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson10.html"><img class="youtubethumb" src="vjg/lessonimage/lesson10.jpg"></a></div>
+<div class="ran3">This unit shows that particles in Japanese are very useful in communication on their own.<p>See also Units 16, 17, and 58.</p>
+<div><h3><label class="vocab" for="10">show / hide vocabulary</label></h3></div>
+<input id="10" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">お願いします (おねがいします) I request</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">あちら that way</li>
+<li class="words">方 (ほう) area</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">こちら this way</li>
+<li class="words">９時 (くじ) 9 o’clock</li>
+<li class="words">一番 (いちばん) Number 1</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">後ろ (うしろ) back</li>
+<li class="words">出口 (でぐち) exit</li>
+<li class="words">タクシー taxi</li>
+<li class="words">大学病院 (だいがくびょういん) university hospital</li>
+<li class="words">１時 (いちじ) 1 o’clock</li>
+<li class="words">５時 (ごじ) 5 o’clock</li>
+<li class="words">木曜日 (もくようび) Thursday</li>
+<li class="words">お願い (おねがい) request</li>
+<li class="words">ペン pen</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">６階 (ろっかい) 6th floor</li></li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 11 - Demonstrative pronouns"></span>
+<div class="unitname">Unit 11 - Demonstrative pronouns</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson11.html"><img class="youtubethumb" src="vjg/lessonimage/lesson11.jpg"></a></div>
+<div class="ran3">This unit explains how to use the demonstrative series こ, そ, あ, and ど in the concrete as well as abstract domains.</p>
+<div><h3><label class="vocab" for="11">show / hide vocabulary</label></h3></div>
+<input id="11" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">いい good</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">する do</li>
+<li class="words">しましょう let’s do</li>
+<li class="words">会った (あった) met</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">君 (きみ) you</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">日本語 (にほんご) Japanese</li>
+<li class="words">教室 (きょうしつ) classroom</li>
+<li class="words">犬 (いぬ) dog</li>
+<li class="words">家 (うち) house</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">高校 (こうこう) high school</li>
+<li class="words">時 (とき) time</li>
+<li class="words">英語 (えいご) English</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">誰 (だれ) who</li>
+<li class="words">誰の (だれの) whose</li>
+<li class="words">じゃあ if that’s the case</li>
+<li class="words">君の (きみの) yours</li>
+<li class="words">どう how</li>
+<li class="words">…よ (ending for assurance)</li>
+<li class="words">ほら (interjection for reminding someone)</li>
+<li class="words">ああ (interjection for recall)</li>
+<li class="words">…の the one</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 12 - Counters"></span>
+<div class="unitname">Unit 12 - Counters</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson12.html"><img class="youtubethumb" src="vjg/lessonimage/lesson12.jpg"></a></div>
+<div class="ran3">This unit contrasts two different methods of using numeral expressions containing counters such as 枚 "sheet" and 冊 "volume." In one, numeral expressions are used to count items. In the other, numeral expressions are used to characterize a specific group in terms of its size.</p>
+<div><h3><label class="vocab" for="12">show / hide vocabulary</label></h3></div>
+<input id="12" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おもしろい fun</li>
+<li class="words">かわいい adorable</li>
+<li class="words">冷たい (つめたい) cold</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">来ます (きます) come</li>
+<li class="words">います be present</li>
+<li class="words">あります exist (inanimate)</li>
+<li class="words">いります need</li>
+<li class="words">寝ています (ねています) be sleeping</li>
+<li class="words">飲みます (のみます) drink</li>
+<li class="words">読みます (よみます) read</li>
+<li class="words">お願いします (おねがいします) request</li>
+<li class="words">来た (きた) came (direct-style form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">きのう yesterday</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">家 (うち) house</li>
+<li class="words">フォーク fork</li>
+<li class="words">お皿 (おさら) plate</li>
+<li class="words">車 (くるま) car</li>
+<li class="words">子犬 (こいぬ) puppy</li>
+<li class="words">ジュース juice</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">ハンバーガー hamburger</li>
+<li class="words">シェーク shake</li>
+<li class="words">ナイフ knife</li>
+<li class="words">ナプキン napkin</li>
+<li class="words">歴史 (れきし) history</li>
+<li class="words">経済 (けいざい) economy</li>
+<li class="words">男子学生 (だんしがくせい) male student</li>
+<li class="words">女子学生 (じょしがくせい) female student</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">その… that</li>
+<li class="words">遅くまで (おそくまで) until late</li>
+<li class="words">それから in addition</li>
+<li class="words">もう… more</li>
+<li class="words">この… this (modifies a noun)</li>
+<li class="words">…だけ only</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 13 - Wh questions"></span>
+<div class="unitname">Unit 13 - Wh questions</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson13.html"><img class="youtubethumb" src="vjg/lessonimage/lesson13.jpg"></a></div>
+<div class="ran3">This unit illustrates that Japanese wh questions (questions containing counterparts of who, what, why, etc.) are structured exactly like their answers and that this feature makes it quite easy to construct and answer complex wh questions in Japanese even though they may be difficult to translate into English.<p>See also Units 35, 37, and 47.</p>
+<div><h3><label class="vocab" for="13">show / hide vocabulary</label></h3></div>
+<input id="13" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">したい want to do</li>
+<li class="words">おもしろい interesting</li>
+<li class="words">ない absent</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">います be present</li>
+<li class="words">あります exist (inanimate)</li>
+<li class="words">来ます (きます) come</li>
+<li class="words">読みます (よみます) read</li>
+<li class="words">見ます (みます) watch</li>
+<li class="words">します do</li>
+<li class="words">言います (いいます) say</li>
+<li class="words">行った (いった) went (direct-style form)</li>
+<li class="words">聞いた (きいた) heard (direct-style form)</li>
+<li class="words">いた stayed (direct-style form)</li>
+<li class="words">話します (はなします) talk</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">午後 (ごご) afternoon</li>
+<li class="words">ここ here</li>
+<li class="words">そこ there</li>
+<li class="words">フランス語 (フランスご) French</li>
+<li class="words">ポルトガル語 (ポルトガルご) Portuguese</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">妹 (いもうと) younger sister</li>
+<li class="words">映画 (えいが) movie</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">国 (くに) country</li>
+<li class="words">移民 (いみん) immigrant</li>
+<li class="words">イタリア Italy</li>
+<li class="words">所 (ところ) place</li>
+<li class="words">弟 (おとうと) younger brother</li>
+<li class="words">お父さん (おとうさん) father</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">話 (はなし) story</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">家族 (かぞく) family</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">警察官 (けいさつかん) policeman</li>
+<li class="words">新聞記者 (しんぶんきしゃ) newspaper reporter</li>
+<li class="words">人気 (ひとけ) presence of people</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">休み (やすみ) holiday</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">５ドル (ごドル) 5 dollars</li>
+<li class="words">１０ドル (じゅうドル) 10 dollars</li>
+<li class="words">この… this (modifies a noun)</li>
+<li class="words">その… that (modifies a noun)</li>
+<li class="words">…と (particle for quotation)</li>
+<li class="words">…について about</li>
+<li class="words">…の (nominalizer)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 14 - Expressing change of state"></span>
+<div class="unitname">Unit 14 - Expressing change of state</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson14.html"><img class="youtubethumb" src="vjg/lessonimage/lesson14.jpg"></a></div>
+<div class="ran3">This unit explains how to describe change of state. Specifically, the following two types of patterns, the adjectival type and the nominal type constructions are illustrated: く-form of adjective + なる "become"; noun-に + なる.<p>See also Units 18 and 41.</p>
+<div><h3><label class="vocab" for="14">show / hide vocabulary</label></h3></div>
+<input id="14" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">暖かい (あたたかい) warm</li>
+<li class="words">寒い (さむい) cold</li>
+<li class="words">弱い (よわい) weak</li>
+<li class="words">強い (つよい) strong</li>
+<li class="words">…にくい hard to</li>
+<li class="words">…やすい easy to</li>
+<li class="words">うるさい noisy</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">静か (しずか) quiet</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">食べる (たべる) eat (direct-style form)</li>
+<li class="words">分かる (わかる) understand (direct-style form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">春 (はる) spring</li>
+<li class="words">風 (かぜ) wind</li>
+<li class="words">道 (みち) road</li>
+<li class="words">肉 (にく) meat</li>
+<li class="words">冬 (ふゆ) winter</li>
+<li class="words">野菜 (やさい) vegetable</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…だけ only</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 15 - Measuring and telling time"></span>
+<div class="unitname">Unit 15 - Measuring and telling time</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson15.html"><img class="youtubethumb" src="vjg/lessonimage/lesson15.jpg"></a></div>
+<div class="ran3">This unit explains how to use expressions like 一時間 "one hour" and 一時 "one o'clock."</p>
+<div><h3><label class="vocab" for="15">show / hide vocabulary</label></h3></div>
+<input id="15" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">走りたい (はしりたい) want to run</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">来ます (きます) come</li>
+<li class="words">かかります take (time)</li>
+<li class="words">います stay</li>
+<li class="words">寝ます (ねます) sleep</li>
+<li class="words">します do</li>
+<li class="words">行きます (いきます) go</li>
+<li class="words">出て (でて) leave and</li>
+<li class="words">着きます (つきます) arrive</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">アメリカ America</li>
+<li class="words">夏休み (なつやすみ) summer vacation</li>
+<li class="words">オレゴン Oregon</li>
+<li class="words">メイン Maine</li>
+<li class="words">車 (くるま) car</li>
+<li class="words">東京 (とうきょう) Tokyo</li>
+<li class="words">ゆで卵 (ゆでたまご) boiled egg</li>
+<li class="words">料理 (りょうり) cooking</li>
+<li class="words">今 (いま) now</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">ワシントン Washington</li>
+<li class="words">午前 (ごぜん) am</li>
+<li class="words">午後 (ごご) pm</li>
+<li class="words">金曜日 (きんようび) Friday</li>
+<li class="words">ニューヨーク New York</li>
+<li class="words">シカゴ Chicago</li>
+<li class="words">札幌 (さっぽろ) Sapporo</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">盛岡 (もりおか) Morioka</li>
+<li class="words">飛行機 (ひこうき) airplane</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…前 (まえ) before</li>
+<li class="words">１度 (いちど) one time</li>
+<li class="words">自分で (じぶんで) on one’s own</li>
+<li class="words">飛行機で (ひこうきで) by airplane</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 16 - Verbs and noun phrases 1"></span>
+<div class="unitname">Unit 16 - Verbs and noun phrases 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson16.html"><img class="youtubethumb" src="vjg/lessonimage/lesson16.jpg"></a></div>
+<div class="ran3">This unit classifies verbs into categories on the basis of semantic characteristics of their associated noun phrases. It also shows what particles can go with what verbs. The verbs in this set are primarily transitive, or take a target.<p>See also Units 7, 10, and 17.</p>
+<div><h3><label class="vocab" for="16">show / hide vocabulary</label></h3></div>
+<input id="16" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">泳ぎます (およぎます) swim</li>
+<li class="words">開きます (あきます) open (intransitive)</li>
+<li class="words">います be present</li>
+<li class="words">座ります (すわります) sit</li>
+<li class="words">なります become</li>
+<li class="words">来ます (きます) come</li>
+<li class="words">出ます (でます) leave</li>
+<li class="words">行きます (いきます) go</li>
+<li class="words">聞こえます (きこえます) be audible</li>
+<li class="words">見ます (みます) see</li>
+<li class="words">買います (かいます) buy</li>
+<li class="words">借りた (かりた) borrowed (direct-style form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">ドア door</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">男 (おとこ) man</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">いす chair</li>
+<li class="words">小学生 (しょうがくせい) elementary school pupil</li>
+<li class="words">僕 (ぼく) I (used by young males)</li>
+<li class="words">家 (うち) house</li>
+<li class="words">道 (みち) road</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">音 (おと) sound</li>
+<li class="words">セーター sweater</li>
+<li class="words">本 (ほん) book</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">…が although</li>
+<li class="words">…の the one</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 17 - Verbs and noun phrases 2"></span>
+<div class="unitname">Unit 17 - Verbs and noun phrases 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson17.html"><img class="youtubethumb" src="vjg/lessonimage/lesson17.jpg"></a></div>
+<div class="ran3">This unit continues with the task of classifying verbs on the basis of their associated noun phrases. The verbs in this unit are mainly intransitive.<p>See also Units 6, 10, 16, and 52.</p>
+<div><h3><label class="vocab" for="17">show / hide vocabulary</label></h3></div>
+<input id="17" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">泳ぎます (およぎます) swim</li>
+<li class="words">開きます (あきます) open (intransitive)</li>
+<li class="words">います be present</li>
+<li class="words">座ります (すわります) sit</li>
+<li class="words">なります become</li>
+<li class="words">来ます (きます) come</li>
+<li class="words">出ます (でます) leave</li>
+<li class="words">行きます (いきます) go</li>
+<li class="words">聞こえます (きこえます) be audible</li>
+<li class="words">見ます (みます) see</li>
+<li class="words">買います (かいます) buy</li>
+<li class="words">借りた (かりた) borrowed (direct-style form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">ドア door</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">男 (おとこ) man</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">いす chair</li>
+<li class="words">小学生 (しょうがくせい) elementary school pupil</li>
+<li class="words">僕 (ぼく) I (used by young males)</li>
+<li class="words">家 (うち) house</li>
+<li class="words">道 (みち) road</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">音 (おと) sound</li>
+<li class="words">セーター sweater</li>
+<li class="words">本 (ほん) book</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">…が although</li>
+<li class="words">…の the one</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 18 - Adverbs and modifiers of nouns"></span>
+<div class="unitname">Unit 18 - Adverbs and modifiers of nouns</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson18.html"><img class="youtubethumb" src="vjg/lessonimage/lesson18.jpg"></a></div>
+<div class="ran3">This unit explains that Japanese makes a sharp distinction between elements modifying verbs and elements modifying nouns.<p>See also Units 5, 14, and 41.</p>
+<div><h3><label class="vocab" for="18">show / hide vocabulary</label></h3></div>
+<input id="18" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+<li class="words">長い (ながい) long</li>
+<li class="words">使いたい (つかいたい) want to use</li>
+<li class="words">重い (おもい) heavy</li>
+<li class="words">甘い (あまい) sweet</li>
+<li class="words">すっぱい sour</li>
+<li class="words">短い (みじかい) short</li>
+<li class="words">大きい (おおきい) big</li>
+<li class="words">若い (わかい) young</li>
+<li class="words">さびしい lonesome</li>
+<li class="words">使いたい (つかいたい) want to use</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">安全 (あんぜん) safe</li>
+<li class="words">ていねい careful</li>
+<li class="words">明らか (あきらか) clear</li>
+<li class="words">(…の) よう resembling</li>
+<li class="words">きれい beautiful</li>
+<li class="words">不便 (ふべん) inconvenient</li>
+<li class="words">有名 (ゆうめい) famous</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">のしかかります weigh on</li>
+<li class="words">建ちます (たちます) be built</li>
+<li class="words">包みます (つつみます) wrap</li>
+<li class="words">ちがいます be different</li>
+<li class="words">食べます (たべます) eat</li>
+<li class="words">話します (はなします) talk</li>
+<li class="words">作ります (つくります) make</li>
+<li class="words">します do</li>
+<li class="words">なります become</li>
+<li class="words">切って (きって) cut and</li>
+<li class="words">書いて (かいて) write and</li>
+<li class="words">見えます (みえます) appear</li>
+<li class="words">帰って (かえって) return home and</li>
+<li class="words">思います (おもいます) think</li>
+<li class="words">落ちない (おちない) do not fall (direct-style form)</li>
+<li class="words">食べられる (たべられる) can eat (direct-style form)</li>
+<li class="words">見える (みえる) be visible (direct-style form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">車 (くるま) car</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">考え (かんがえ) idea</li>
+<li class="words">ビル building</li>
+<li class="words">プレゼント present</li>
+<li class="words">サイン signature</li>
+<li class="words">すずめ sparrow</li>
+<li class="words">鳥 (とり) bird</li>
+<li class="words">ロボット robot</li>
+<li class="words">人間 (にんげん) human being</li>
+<li class="words">事務所 (じむしょ) office</li>
+<li class="words">三階 (さんかい) third floor</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">砂糖 (さとう) sugar</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">駅前 (えきまえ) area in front of a station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">方 (ほう) area</li>
+<li class="words">名前 (なまえ) name</li>
+<li class="words">祖母 (そぼ) grandmother</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">押しボタン (おしボタン) push button</li>
+<li class="words">位置 (いち) position</li>
+<li class="words">韓国人 (かんこくじん) South Korean citizen</li>
+<li class="words">俳優 (はいゆう) actor</li>
+<li class="words">子供 (こども) child</li>
+<li class="words">柵 (さく) fence</li>
+<li class="words">看板 (かんばん) billboard</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">あんまり not too (with a negative form)</li>
+<li class="words">みんなで together</li>
+<li class="words">たくさん a lot</li>
+<li class="words">誰でも (だれでも) anyone</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 19 - Speech styles"></span>
+<div class="unitname">Unit 19 - Speech styles</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson19.html"><img class="youtubethumb" src="vjg/lessonimage/lesson19.jpg"></a></div>
+<div class="ran3">This unit introduces the distinction between direct-style forms and polite forms. The primary factor for this distinction is the nature of the audience. <p>See also Units 20, 37, 38, 39, 40, 41, 42, 43, 46, 47, 50, 56, and 65.</p>
+<div><h3><label class="vocab" for="19">show / hide vocabulary</label></h3></div>
+<input id="19" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">まるい round</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行く (いく) go</li>
+<li class="words">いらっしゃいます be present/go/come (honorific form)</li>
+<li class="words">いらっしゃる be present/go/come (direct-style honorific form)</li>
+<li class="words">来る (くる) come (direct-style form)</li>
+<li class="words">みる look (direct-style form)</li>
+<li class="words">来ています (きています) be here</li>
+<li class="words">来ている (きている) be here (direct-style form)</li>
+<li class="words">分かります (わかります) understand</li>
+<li class="words">ある exist (direct-style form)</li>
+<li class="words">働いています (はたらいています) be working</li>
+<li class="words">聞きます (ききます) ask</li>
+<li class="words">働く (はたらく) work</li>
+<li class="words">思います (おもいます) think</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">病院 (びょういん) hospital</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">御両親 (ごりょうしん) parents (honorific form)</li>
+<li class="words">しかく rectangle</li>
+<li class="words">今 (いま) now</li>
+<li class="words">僕 (ぼく) I (used by young males)</li>
+<li class="words">イタリア Italy</li>
+<li class="words">ミラノ Milan</li>
+<li class="words">無医村 (むいそん) village without resident doctors</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">どちら which way</li>
+<li class="words">…よ (particle for assertion)</li>
+<li class="words">…ね (particle for confirmation)</li>
+<li class="words">…からbecause</li>
+<li class="words">すぐ right away</li>
+<li class="words">どこ where</li>
+<li class="words">…か (particle for question)</li>
+<li class="words">…つもり intention</li>
+<li class="words">３時 (さんじ) 3 o’clock</li>
+<li class="words">…でしょう probably</li>
+<li class="words">…かもしれない maybe</li>
+<li class="words">…はず expectation</li>
+<li class="words">…よう appearance</li>
+<li class="words">…のです it is that</li>
+<li class="words">…と (particle for quotation)</li>
+<li class="words">…そう hearsay</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 20 - Verbal conjugations"></span>
+<div class="unitname">Unit 20 - Verbal conjugations</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson20.html"><img class="youtubethumb" src="vjg/lessonimage/lesson20.jpg"></a></div>
+<div class="ran3">This unit explains how to derive various conjugational forms of so-called one-step verbs, five-step verbs, and irregular verbs.</p>
+<div><h3><label class="vocab" for="20">show / hide vocabulary</label></h3></div>
+<input id="20" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行く (いく) go</li>
+<li class="words">借りる (かりる) borrow</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">変える (かえる) change</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">売る (うる) sell</li>
+<li class="words">会う (あう) meet</li>
+<li class="words">呼ぶ (よぶ) call</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">書く (かく) write</li>
+<li class="words">泳ぐ (およぐ) swim</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">来る (かりる) come</li>
+<li class="words">する do</li>
+<li class="words">ある exist (inanimate)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 21 - Cause and effect"></span>
+<div class="unitname">Unit 21 - Cause and effect</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson21.html"><img class="youtubethumb" src="vjg/lessonimage/lesson21.jpg"></a></div>
+<div class="ran3">This unit explains how to express cause-effect relationships. It clarifies that the cause always precedes the effect in Japanese.<p>See also Unit 22.</p>
+<div><h3><label class="vocab" for="21">show / hide vocabulary</label></h3></div>
+<input id="21" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+<li class="words">高い (たかい) expensive</li>
+<li class="words">むずかしい difficult</li>
+<li class="words">やさしい easy</li>
+<li class="words">はやい fast</li>
+<li class="words">うるさい noisy</li>
+<li class="words">強い (つよい) strong</li>
+<li class="words">寒い (さむい) cold</li>
+<li class="words">小さい (ちいさい) small</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">静か (しずか) quiet</li>
+<li class="words">おいしそう appetizing</li>
+<li class="words">まずそう unappetizing</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">分かる (わかる) understand/figure out</li>
+<li class="words">分かる (わかる)</li>
+<li class="words">出来る (できる) be able to do</li>
+<li class="words">降っている (ふっている) be raining</li>
+<li class="words">ある exist (inanimate)</li>
+<li class="words">いる be present</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">読める (よめる) be able to read</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">モデル model</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">日本語 (にほんご) Japanese</li>
+<li class="words">勉強 (べんきょう) studying</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">ピクニック picnic</li>
+<li class="words">風 (かぜ) wind</li>
+<li class="words">家 (うち) house</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">中 (なか) inside</li>
+<li class="words">字 (じ) letter</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 22 - Connecting sentences"></span>
+<div class="unitname">Unit 22 - Connecting sentences</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson22.html"><img class="youtubethumb" src="vjg/lessonimage/lesson22.jpg"></a></div>
+<div class="ran3">This unit focuses on て-forms as a means of connecting very closely related events.<p>See also Units 21, 37, 38, and 44.</p>
+<div><h3><label class="vocab" for="22">show / hide vocabulary</label></h3></div>
+<input id="22" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">強い (つよい) strong</li>
+<li class="words">寒い (さむい) cold</li>
+<li class="words">おいしい difficult</li>
+<li class="words">涼しい (すずしい) cool</li>
+<li class="words">いい good</li>
+<li class="words">…たい want to</li>
+<li class="words">…やすい easy to</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">強そう (つよそう) looking strong</li>
+<li class="words">いや loathsome</li>
+<li class="words">健康的 (けんこうてき) wholesome</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">いる stay</li>
+<li class="words">出かける (でかける) go out</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">泳ぐ (およぐ) swim</li>
+<li class="words">する do</li>
+<li class="words">起きる (おきる) get up</li>
+<li class="words">行く (いく) go</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">なる become</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">…はじめる begin to</li>
+<li class="words">…続く (つづく) continue to</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">風 (かぜ) wind</li>
+<li class="words">家 (うち) house</li>
+<li class="words">日 (ひ) day</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">日本食 (にほんしょく) Japanese food</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">エアロビックス aerobics</li>
+<li class="words">ジョギング jogging</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">インターネット Internet</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">ここ here</li>
+<li class="words">ステーキ steak</li>
+<li class="words">１ページ (いっページ) page 1</li>
+<li class="words">雪 (ゆき) snow</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…の (nominalizer)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 23 - Continuative 1"></span>
+<div class="unitname">Unit 23 - Continuative 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson23.html"><img class="youtubethumb" src="vjg/lessonimage/lesson23.jpg"></a></div>
+<div class="ran3">This unit explains the basic use of the continuative construction [て-form + いる] in the sense of progressive aspect.<p>See also Units 25 and 26.</p>
+<div><h3><label class="vocab" for="23">show / hide vocabulary</label></h3></div>
+<input id="23" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">勉強する (べんきょうする) study, いる stay</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">する do</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">電話する (でんわする) make a phone call</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">待つ (まつ) wait</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">道 (みち) road</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">今 (いま) now</li>
+<li class="words">ケーキ cake</li>
+<li class="words">ハンバーガー hamburger</li>
+<li class="words">音楽 (おんがく) music</li>
+<li class="words">ビール beer</li>
+<li class="words">新聞 (しんぶん) newspaper</li>
+<li class="words">昨夜（さくや）last night</li>
+<li class="words">９時（くじ） 9 o’clock</li>
+<li class="words">レストラン restaurant</li>
+<li class="words">食事（しょくじ）meal</li>
+<li class="words">図書館（としょかん）library</li>
+<li class="words">本（ほん）book</li>
+<li class="words">家（うち）house</li>
+<li class="words">バス bus</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何 (なに) what</li>
+<li class="words">…ごろ approximately</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 24 - Directional verbs"></span>
+<div class="unitname">Unit 24 - Directional verbs</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson24.html"><img class="youtubethumb" src="vjg/lessonimage/lesson24.jpg"></a></div>
+<div class="ran3">This unit focuses on the use of 来る "come" and 行く "go" as auxiliary verbs.<p>See also Units 49 and 53.</p>
+<div><h3><label class="vocab" for="24">show / hide vocabulary</label></h3></div>
+<input id="24" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">来る (くる) come</li>
+<li class="words">行く (いく) go</li>
+<li class="words">持つ (もつ) hold</li>
+<li class="words">する do</li>
+<li class="words">着る (きる) wear</li>
+<li class="words">飛ぶ (とぶ) fly</li>
+<li class="words">落ちる (おちる) fall</li>
+<li class="words">歩く (あるく) walk</li>
+<li class="words">走る (はしる) run</li>
+<li class="words">乗る (のる) ride</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">隠れる (かくれる) hide oneself</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">勉強する (べんきょうする) study</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">こちら this way</li>
+<li class="words">あちら that way</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">オーバー overcoat</li>
+<li class="words">マフラー muffler</li>
+<li class="words">鳥 (とり) bird</li>
+<li class="words">枯れ葉 (かれは) withered leaf</li>
+<li class="words">自転車 (じてんしゃ) bicycle</li>
+<li class="words">宿題 (しゅくだい) homework</li>
+<li class="words">薬 (くすり) medicine</li>
+<li class="words">サラダ salad</li>
+<li class="words">すし sushi</li>
+<li class="words">ケーキ cake</li>
+<li class="words">山 (やま) mountain</li>
+<li class="words">雲 (くも) cloud</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">今 (いま) now</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">これから from now on</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 25 - Continuative 2"></span>
+<div class="unitname">Unit 25 - Continuative 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson25.html"><img class="youtubethumb" src="vjg/lessonimage/lesson25.jpg"></a></div>
+<div class="ran3">This unit explains the other meaning of the ている construction introduced in Unit 9, namely the continuation of a resultant state.<p>See also Units 23, 26, 53, and 64.</p>
+<div><h3><label class="vocab" for="25">show / hide vocabulary</label></h3></div>
+<input id="25" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">割れる (われる) break</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">建つ (たつ) be built</li>
+<li class="words">落ちる (おちる) fall</li>
+<li class="words">かかる be suspended across</li>
+<li class="words">鍵がかかる (かぎがかかる) be locked</li>
+<li class="words">結婚する (けっこんする) get married</li>
+<li class="words">来る (くる) come</li>
+<li class="words">行く (いく) go</li>
+<li class="words">帰る (かえる) return</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">窓ガラス (まどガラス) window pane</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">病院 (びょういん) hospital</li>
+<li class="words">お金 (おかね) money</li>
+<li class="words">鍵 (かぎ) key/lock</li>
+<li class="words">田中さん (たなかさん) Mr./Ms. Tanaka</li>
+<li class="words">ニューヨーク New York</li>
+<li class="words">リーさん Mr./Ms. Lee</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">家 (うち) house</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 26 - Describing clothing"></span>
+<div class="unitname">Unit 26 - Describing clothing</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson26.html"><img class="youtubethumb" src="vjg/lessonimage/lesson26.jpg"></a></div>
+<div class="ran3">This unit examines an application of the concept explained in Unit 10. It shows how the resultant continuative construction is used to describe how a person is dressed.<p>See also Units 23 and 25.</p>
+<div><h3><label class="vocab" for="26">show / hide vocabulary</label></h3></div>
+<input id="26" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">着る (きる) wear</li>
+<li class="words">いる stay</li>
+<li class="words">はく put on</li>
+<li class="words">かぶる put on</li>
+<li class="words">脱ぐ (ぬぐ) remove (a clothing item)</li>
+<li class="words">かける put on</li>
+<li class="words">する do</li>
+<li class="words">来る (くる) come</li>
+<li class="words">行く (いく) go</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">セーター sweater</li>
+<li class="words">ズボン trousers</li>
+<li class="words">Tシャツ T-shirt</li>
+<li class="words">靴 (くつ) shoe</li>
+<li class="words">ぼうし hat/cap</li>
+<li class="words">眼鏡 (めがね) eye glasses</li>
+<li class="words">時計 (とけい) watch/clock</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何も着ていない (なにもきていない) he has nothing on</li>
+<li class="words">はだかだ he is naked</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 27 - Comparison of objects"></span>
+<div class="unitname">Unit 27 - Comparison of objects</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson27.html"><img class="youtubethumb" src="vjg/lessonimage/lesson27.jpg"></a></div>
+<div class="ran3">This unit explains the pattern used for comparison.<p>See also Unit 46.</p>
+<div><h3><label class="vocab" for="27">show / hide vocabulary</label></h3></div>
+<input id="27" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+<li class="words">…やすい easy to</li>
+<li class="words">大きい (おおきい) big</li>
+<li class="words">近い (ちかい) near</li>
+<li class="words">むずかしい difficult</li>
+<li class="words">暖かい (あたたかい) warm</li>
+<li class="words">青い (あおい) blue</li>
+<li class="words">高い (たかい) high</li>
+<li class="words">低い (ひくい) low</li>
+<li class="words">背が低い (せがひくい) short in stature</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">きれい beautiful</li>
+<li class="words">おいしそう looking delicious</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">使う (つかう) use</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">聞こえる (きこえる) be audible</li>
+<li class="words">作る (つくる) make</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">これ this</li>
+<li class="words">辞書 (じしょ) dictionary</li>
+<li class="words">方 (ほう) option</li>
+<li class="words">左 (ひだり) left side</li>
+<li class="words">右 (みぎ) right side</li>
+<li class="words">アラスカ Alaska</li>
+<li class="words">テキサス Texas</li>
+<li class="words">１番 (いちばん) Number 1</li>
+<li class="words">２番 (にばん) Number 2</li>
+<li class="words">家 (うち) house</li>
+<li class="words">中 (なか) inside</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">五階 (ごかい) fifth floor</li>
+<li class="words">家賃 (やちん) rent</li>
+<li class="words">父 (ちち) father</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">背 (せ) stature</li>
+<li class="words">ケーキ cake</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">もっと more</li>
+<li class="words">この this (modifies a noun)</li>
+<li class="words">その that (modifies a noun)</li>
+<li class="words">三つ (みっつ) three items</li>
+<li class="words">…のうちで among</li>
+<li class="words">一番 (いちばん) the most</li>
+<li class="words">よく well</li>
+<li class="words">…の the one</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 28 - Combining particles"></span>
+<div class="unitname">Unit 28 - Combining particles</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson28.html"><img class="youtubethumb" src="vjg/lessonimage/lesson28.jpg"></a></div>
+<div class="ran3">This unit explains how the particles は, も, and の are combined with other particles.</p>
+<div><h3><label class="vocab" for="28">show / hide vocabulary</label></h3></div>
+<input id="28" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">来る (くる) come</li>
+<li class="words">書く (かく) write</li>
+<li class="words">行く (いく) go</li>
+<li class="words">ある exist</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">いる stay</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">やる do</li>
+<li class="words">作る (つくる) make</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">新聞 (しんぶん) newspaper</li>
+<li class="words">君 (きみ) you (used by males)</li>
+<li class="words">これ this</li>
+<li class="words">東京 (とうきょう) Tokyo</li>
+<li class="words">昨日 (きのう) yesterday</li>
+<li class="words">一昨日 (おととい) day before yesterday</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">大阪 (おおさか) Osaka</li>
+<li class="words">京都 (きょうと) Kyoto</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">カイロ Cairo</li>
+<li class="words">ロンドン London</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">イタリア人 (イタリア人) Italian</li>
+<li class="words">ピザ pizza</li>
+<li class="words">インターネット Internet</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">インド India</li>
+<li class="words">旅行 (りょこう) travel</li>
+<li class="words">香港 (ほんこん) Hong Kong</li>
+<li class="words">電話 (でんわ) phone call</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">お客さん (おきゃくさん) guest</li>
+<li class="words">留学生 (りゅうがくせい) foreign student</li>
+<li class="words">パーティ party</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…の it is the case that</li>
+<li class="words">…方 (かた) how to</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 29 - Expressions of desire"></span>
+<div class="unitname">Unit 29 - Expressions of desire</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson29.html"><img class="youtubethumb" src="vjg/lessonimage/lesson29.jpg"></a></div>
+<div class="ran3">This unit compares the pattern for expressing one's desire for one's own action and the pattern for expressing one's desire for other people's action.<p>See also Unit 7.</p>
+<div><h3><label class="vocab" for="29">show / hide vocabulary</label></h3></div>
+<input id="29" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">…たい want to</li>
+<li class="words">…てほしい want someone to do something</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">食べる (たべる) eat</li>
+<li class="words">行く (いく) go</li>
+<li class="words">電話する (でんわする) make a phone call</li>
+<li class="words">する do</li>
+<li class="words">洗う (あらう) wash</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">来る (くる) come</li>
+<li class="words">連れて行く (つれていく) take a person along</li>
+<li class="words">もらう receive</li>
+<li class="words">書く (かく) write</li>
+<li class="words">いただく receive (humble form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">ステーキ steak</li>
+<li class="words">アフリカ Africa</li>
+<li class="words">僕 (ぼく) I (used by males)</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">お皿 (おさら) plate</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">ケーキ cake</li>
+<li class="words">スカイダイビング skydiving</li>
+<li class="words">家 (うち) house</li>
+<li class="words">レストラン restaurant</li>
+<li class="words">食事 (しょくじ) meal</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">推薦状 (すいせんじょう) letter of recommendation</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何 (なに) what</li>
+<li class="words">…んですが I would like you to know that</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 30 - Probability"></span>
+<div class="unitname">Unit 30 - Probability</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson30.html"><img class="youtubethumb" src="vjg/lessonimage/lesson30.jpg"></a></div>
+<div class="ran3">This unit explains sentence-final elements でしょう "it is probably the case" and かもしれない "there is the possibility," which mark the likelihood of an event.<p>See also Unit 36.</p>
+<div><h3><label class="vocab" for="30">show / hide vocabulary</label></h3></div>
+<input id="30" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">寒い (さむい) cold</li>
+<li class="words">遠い (とおい) far</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">静か (しずか) quiet</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">いる need</li>
+<li class="words">なる become</li>
+<li class="words">行く (いく) go</li>
+<li class="words">晴れる (はれる) clear up</li>
+<li class="words">上がる (あがる) go up</li>
+<li class="words">着く (つく) arive</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">変わる (かわる) change (intransitive)</li>
+<li class="words">見る (みる) look</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">今日 (きょう) today</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">かさ umbrella</li>
+<li class="words">夕方 (ゆうがた) dusk</li>
+<li class="words">雪 (ゆき) snow</li>
+<li class="words">田舎 (いなか) countryside</li>
+<li class="words">最高気温 (さいこうきおん) highest temperature</li>
+<li class="words">東京 (とうきょう) Tokyo</li>
+<li class="words">バス bus</li>
+<li class="words">中 (なか) inside</li>
+<li class="words">火曜日 (かようび) Tuesday</li>
+<li class="words">人間 (にんげん) human being</li>
+<li class="words">本質 (ほんしつ) essense</li>
+<li class="words">今晩 (こんばん) tonight</li>
+<li class="words">映画 (えいが) movie</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">ちょっと a little</li>
+<li class="words">もう already</li>
+<li class="words">今ごろ (いまごろ) about this time</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 31 - Temporal clauses with nagara"></span>
+<div class="unitname">Unit 31 - Temporal clauses with ながら</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson31.html"><img class="youtubethumb" src="vjg/lessonimage/lesson31.jpg"></a></div>
+<div class="ran3">This unit explains how to use ながら. The differences between nagara and its closest English equivalent "while" are pointed out.</p>
+<div><h3><label class="vocab" for="31">show / hide vocabulary</label></h3></div>
+<input id="31" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">見る (みる) watch</li>
+<li class="words">する do</li>
+<li class="words">歌う (うたう) sing</li>
+<li class="words">浴びる (あびる) be splashed</li>
+<li class="words">シャワーを浴びる take a shower</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">歩く (あるく) walk</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">考える (かんがえる) think</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">運転する (うんてんする) drive</li>
+<li class="words">洗う (あらう) wash</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">テレビ television</li>
+<li class="words">そうじ cleaning</li>
+<li class="words">歌 (うた) song</li>
+<li class="words">シャワー shower</li>
+<li class="words">アイスクリーム icecream</li>
+<li class="words">新聞 (しんぶん) newspaper</li>
+<li class="words">音楽 (おんがく) music</li>
+<li class="words">コーヒー coffee</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">ベーグル bagle</li>
+<li class="words">ビール beer</li>
+<li class="words">ハンバーガー hamburger</li>
+<li class="words">けいたい cell phone</li>
+<li class="words">料理 (りょうり) cooking</li>
+<li class="words">せんたく laundry</li>
+<li class="words">お皿 (おさら) plate</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 32 - Purpose phrases 1"></span>
+<div class="unitname">Unit 32 - Purpose phrases 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson32.html"><img class="youtubethumb" src="vjg/lessonimage/lesson32.jpg"></a></div>
+<div class="ran3">This unit describes the purpose construction [location + に/へ + verbal stem + に + verb of movement], which is used in sentences such as 海に泳ぎに行く "I go to the beach for a swim."<p>See also Units 43, 44, and 45.</p>
+<div><h3><label class="vocab" for="32">show / hide vocabulary</label></h3></div>
+<input id="32" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">買う (かう) buy</li>
+<li class="words">行く (いく) go</li>
+<li class="words">する do</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">出す (だす) send out</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">スーパー supermarket</li>
+<li class="words">食べ物 (たべもの) food</li>
+<li class="words">公園 (こうえん) park</li>
+<li class="words">ジョギング jogging</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">郵便局 (ゆうびんきょく) post office</li>
+<li class="words">手紙 (てがみ) letter</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">研究室 (けんきゅうしつ) professors office</li>
+<li class="words">質問 (しつもん) question</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 33 - Listing options"></span>
+<div class="unitname">Unit 33 - Listing options</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson33.html"><img class="youtubethumb" src="vjg/lessonimage/lesson33.jpg"></a></div>
+<div class="ran3">This unit explains how to give examples of things, actions, or events. The expressions involved are か, や, とか, and たり.</p>
+<div><h3><label class="vocab" for="33">show / hide vocabulary</label></h3></div>
+<input id="33" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+<li class="words">高い (たかい) expensive</li>
+<li class="words">…たい want to</li>
+<li class="words">暑い (あつい) hot</li>
+<li class="words">寒い (さむい) cold</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">好き (すき) favorite</li>
+<li class="words">きれい beautiful</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">いる be present</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">来る (くる) come</li>
+<li class="words">ふく blow</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">する do</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">座る (すわる) sit</li>
+<li class="words">行く (いく) go</li>
+<li class="words">見る (みる) look</li>
+<li class="words">教える (おしえる) teach</li>
+<li class="words">勉強する (べんきょうする) study</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">猫 (ねこ) cat</li>
+<li class="words">犬 (いぬ) dog</li>
+<li class="words">家 (うち) house</li>
+<li class="words">夕食 (ゆうしょく) supper</li>
+<li class="words">時 (とき) time</li>
+<li class="words">ビール beer</li>
+<li class="words">朝ご飯 (あさごはん) breakfast</li>
+<li class="words">コーンフレーク corn flakes</li>
+<li class="words">ホットケーキ pancake</li>
+<li class="words">スポーツ sport</li>
+<li class="words">野球 (やきゅう) baseball</li>
+<li class="words">サッカー soccer</li>
+<li class="words">スペイン人 (スペインじん) Spaniard</li>
+<li class="words">車 (くるま) car</li>
+<li class="words">風 (かぜ) wind</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">同じ (おなじ) same (a special type of noun)</li>
+<li class="words">一年生 (いちねんせい) first-year student</li>
+<li class="words">コーヒー  coffee</li>
+<li class="words">休み (やすみ) rest</li>
+<li class="words">日 (ひ) day</li>
+<li class="words">こと thing</li>
+<li class="words">掃除 (そうじ) cleaning</li>
+<li class="words">洗濯 (せんたく) laundry</li>
+<li class="words">前 (まえ) before</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">音楽(おんがく) music</li>
+<li class="words">右 (みぎ) right side</li>
+<li class="words">左 (ひだり) left side</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">大阪 (おおさか) Osaka</li>
+<li class="words">京都 (きょうと) Kyoto</li>
+<li class="words">英語 (えいご) English</li>
+<li class="words">学校 (がっこう) school</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何 (なに) what</li>
+<li class="words">どんな what kind of</li>
+<li class="words">それから after that</li>
+<li class="words">その that (modifies a noun)</li>
+<li class="words">どこ where</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 34 - Elements appearing with negative endings"></span>
+<div class="unitname">Unit 34 - Elements appearing with negative endings</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson34.html"><img class="youtubethumb" src="vjg/lessonimage/lesson34.jpg"></a></div>
+<div class="ran3">This unit explains constructions such as 誰も...ない "no one" and しか...ない "nothing but."<p>See also Unit 35.</p>
+<div><h3><label class="vocab" for="34">show / hide vocabulary</label></h3></div>
+<input id="34" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おもしろい interesting</li>
+<li class="words">いい good</li>
+<li class="words">黄色い (きいろい) yellow</li>
+<li class="words">ない absent</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">大変 (たいへん) troublesome</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">使う (つかう) use</li>
+<li class="words">来る (くる) come</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">知る (しる) come to know</li>
+<li class="words">行く (いく) go</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">寝られる (ねられる) can sleep</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">…てくれる someone does something for the speaker</li>
+<li class="words">読める (よめる) can read</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">階段 (かいだん) staircase</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">セーター sweater</li>
+<li class="words">ステーキ steak</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">レポート report</li>
+<li class="words">しめきり deadline</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">全然 (ぜんぜん) at all (used with a negative form)</li>
+<li class="words">めったに seldom (used with a negative form)</li>
+<li class="words">ほとんど almost</li>
+<li class="words">あまり not too (used with a negative form)</li>
+<li class="words">誰 (だれ) who</li>
+<li class="words">何 (なに) what</li>
+<li class="words">どこ where</li>
+<li class="words">どちら which</li>
+<li class="words">どれ which</li>
+<li class="words">どの what (modifies a noun)</li>
+<li class="words">三人 (さんにん) 3 people</li>
+<li class="words">３時間 (さんじかん) 3 hours</li>
+<li class="words">８千ドル (はっせんドル) 8,000 dollars</li>
+<li class="words">一週間 (いっしゅうかん) a week</li>
+<li class="words">２冊 (にさつ) 2 volumes</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 35 - More on wh expressions"></span>
+<div class="unitname">Unit 35 - More on wh expressions</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson35.html"><img class="youtubethumb" src="vjg/lessonimage/lesson35.jpg"></a></div>
+<div class="ran3">This unit continues with the topic of the construction [wh element + も] and expands into the construction [wh element + か].<p>See also Units 13, 34, and 37.</p>
+<div><h3><label class="vocab" for="35">show / hide vocabulary</label></h3></div>
+<input id="35" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">むずかしい difficult</li>
+<li class="words">高い (たかい) expensive</li>
+<li class="words">おもしろい fun</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">分かる (わかる) understand</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">来る (くる) come</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">知る (しる) come to know</li>
+<li class="words">行く (いく) go</li>
+<li class="words">いる be present</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">書く (かく) write</li>
+<li class="words">覚える (おぼえる) memorize</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">私 (わたし) I</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">学生 (がくせい) student</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">漢字 (かんじ) Chinese character</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">誰 (だれ) who</li>
+<li class="words">どちら which</li>
+<li class="words">何十人 (なんじゅうにん) how many tens of people</li>
+<li class="words">何十回 (なんじゅっかい) how many tens of times</li>
+<li class="words">どこ where</li>
+<li class="words">どれ which</li>
+<li class="words">どの which (modifies a noun)</li>
+<li class="words">どんな what kind of</li>
+<li class="words">いつ when</li>
+<li class="words">いくつ how many</li>
+<li class="words">いくら  how much</li>
+<li class="words">何億年 (なんおくねん) how many hundreds of millions of years</li>
+<li class="words">何万人 (なんまんにん) how many tens of thousands of people</li>
+<li class="words">何千万円 (なんぜんまんえん) how many tens of millions of years</li>
+<li class="words">何十年 (なんじゅうねん) how many tens of years</li>
+<li class="words">何百万匹 (なんびゃくまんびき) how many millions of animals</li>
+<li class="words">何十万冊 (なんじゅうまんさつ) how many hundreds of thousands of volumes</li>
+<li class="words">何万人 (なんまんにん) how many tens of thousands of people</li>
+<li class="words">何百回 (なんびゃっかい) how many hundreds of times</li>
+<li class="words">何回 (なんかい) how many times</li>
+<li class="words">何人 (なんにん) how many people</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 36 - Tentative forms"></span>
+<div class="unitname">Unit 36 - Tentative forms</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson36.html"><img class="youtubethumb" src="vjg/lessonimage/lesson36.jpg"></a></div>
+<div class="ran3">This unit describes the constructions ましょう and でしょう, which roughly correspond to "let's" in English.<p>See also Units 7, 30, 40, and 53.</p>
+<div><h3><label class="vocab" for="36">show / hide vocabulary</label></h3></div>
+<input id="36" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">つかまえる catch</li>
+<li class="words">開ける (あける) open</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">行く (いく) go</li>
+<li class="words">いる need</li>
+<li class="words">なる become</li>
+<li class="words">…ておく do something in preparation</li>
+<li class="words">分ける (わける) divide</li>
+<li class="words">変える (かえる) change</li>
+<li class="words">決める (きめる) decide</li>
+<li class="words">捨てる (すてる) discard</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">呼ぶ (よぶ) call</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">書く (かく) write</li>
+<li class="words">急ぐ (いそぐ) hurry</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">する do</li>
+<li class="words">来る (くる) come</li>
+<li class="words">思う (おもう) think</li>
+<li class="words">迷う (まよう) be puzzled</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">タクシー taxie</li>
+<li class="words">窓 (まど) window</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">夏休み (なつやすみ) summer vacation</li>
+<li class="words">中国 (ちゅうごく) China</li>
+<li class="words">去年 (きょねん) last year</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">かさ umbrella</li>
+<li class="words">夕方 (ゆうがた) dusk</li>
+<li class="words">すし sushi</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何 (なに) what</li>
+<li class="words">一緒に (いっしょに) together</li>
+<li class="words">…か (particle for question)</li>
+<li class="words">…と (particle for quoation)</li>
+<li class="words">どれ which</li>
+<li class="words">一口で (ひとくちで) in one bite</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 37 - Complex noun phrases"></span>
+<div class="unitname">Unit 37 - Complex noun phrases</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson37.html"><img class="youtubethumb" src="vjg/lessonimage/lesson37.jpg"></a></div>
+<div class="ran3">This unit explains how to form and use Japanese counterparts of complex noun phrases such as "the cake that Mr. Kimura made and a woman who was waiting for a bus."<p>See also Units 3, 13, and 22.</p>
+<div><h3><label class="vocab" for="37">show / hide vocabulary</label></h3></div>
+<input id="37" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おいしい tasty</li>
+<li class="words">…たい want to</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">おいしそう delicious-looking</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">作る (つくる) make</li>
+<li class="words">見る (みる) see</li>
+<li class="words">する do</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">来る (くる) come</li>
+<li class="words">行く (いく) go</li>
+<li class="words">ある exist (inanimate)</li>
+<li class="words">待つ (まつ) wait</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">ケーキ cake</li>
+<li class="words"> 私 (わたし) I</li>
+<li class="words">映画 (えいが) movie</li>
+<li class="words">コーヒー coffee</li>
+<li class="words">カプチーノ Cappucino</li>
+<li class="words">３時 (さんじ) three o’clock</li>
+<li class="words">バス bus</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">田中 (たなか) (family name)</li>
+<li class="words">テキサス Texas</li>
+<li class="words">大学 (だいがく) university</li>
+<li class="words">山田 (やまだ) (family name)</li>
+<li class="words">女の人 (おんなのひと) woman</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">もう already</li>
+<li class="words">よく well/frequently</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 38 - Nominalization 1"></span>
+<div class="unitname">Unit 38 - Nominalization 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson38.html"><img class="youtubethumb" src="vjg/lessonimage/lesson38.jpg"></a></div>
+<div class="ran3">This unit explains how to form and use Japanese counterparts of constructions like the bracketed parts below:<br>
+I remember [my mother cooking in our old kitchen].<br>
+[For me to cook] is a major event.<br>
+It is surprising [that you should cook]. <p>See also Units 22, 50, and 52.</p>
+<div><h3><label class="vocab" for="38">show / hide vocabulary</label></h3></div>
+<input id="38" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おかしい strange</li>
+<li class="words">いい good</li>
+<li class="words">寒い (さむい) cold</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">いや disagreeable</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">作る (つくる) make</li>
+<li class="words">見る (みる) see</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">聞こえる (きこえる) be audible</li>
+<li class="words">する do</li>
+<li class="words">手伝う (てつだう) help</li>
+<li class="words">建てる (たてる) build</li>
+<li class="words">反対する (はんたいする) oppose</li>
+<li class="words">来る (くる) come</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">木村さん (きむらさん) Mr./Ms. Kimura</li>
+<li class="words">ケーキ cake</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">健康 (けんこう) health</li>
+<li class="words">女の人 (おんなのひと) woman</li>
+<li class="words">バス bus</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">料理 (りょうり) cooking</li>
+<li class="words">発電所 (はつでんしょ) power plant</li>
+<li class="words">３時 (さんじ) three o’clock</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">たくさん a lot</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 39 - N-desu"></span>
+<div class="unitname">Unit 39 - んです</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson39.html"><img class="youtubethumb" src="vjg/lessonimage/lesson39.jpg"></a></div>
+<div class="ran3">This unit explains the so-called "extended predicate" construction, んです and its variations, which is used when making explanatory comments on personal circumstances.<p>See also Unit 38.</p>
+<div><h3><label class="vocab" for="39">show / hide vocabulary</label></h3></div>
+<input id="39" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">…たい want to</li>
+<li class="words">遅い (おそい) late</li>
+<li class="words">ない absent</li>
+<li class="words">いい OK</li>
+<li class="words">寒い (さむい) cold</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">簡単 (かんたん) simple</li>
+<li class="words">…みたい resembling</li>
+<li class="words">…よう appearing</li>
+<li class="words">静か (しずか) quiet</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">食べる (たべる) eat</li>
+<li class="words">行く (いく) go</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">お分かりになる (おわかりになる) understand (honorific form)</li>
+<li class="words">遅れる (おくれる) be delayed</li>
+<li class="words">ある exist</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">作れる (つくれる) can make</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">借りる (かりる) borrow</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">聞こえる (きこえる) be audible</li>
+<li class="words">静かにする (しずかにする) keep quiet</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">大学病院 (だいがくびょういん) university hospital</li>
+<li class="words">事故 (じこ) accident</li>
+<li class="words">高速道路 (こうそくどうろ) highway</li>
+<li class="words">午後 (ごご) afternoon</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">昨日 (きのう) yesterday</li>
+<li class="words">かさ umbrella</li>
+<li class="words">宿題 (しゅくだい) homework</li>
+<li class="words">締めきり (しめきり) deadline</li>
+<li class="words">時間 (じかん) time</li>
+<li class="words">かぜ cold</li>
+<li class="words">熱 (ねつ) fever</li>
+<li class="words">インフルエンザ flu</li>
+<li class="words">電話 (でんわ) telephone</li>
+<li class="words">冬 (ふゆ) winter</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何 (なに) what</li>
+<li class="words">…ん (short form of the nominalizer の)</li>
+<li class="words">…が although</li>
+<li class="words">すみません I am sorry</li>
+<li class="words">誰でも (だれでも) no matter who</li>
+<li class="words">たくさん a lot</li>
+<li class="words">どうした what happened</li>
+<li class="words">ちょっと a little</li>
+<li class="words">…から because</li>
+<li class="words">よく well</li>
+<li class="words">だから therefore</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 40 - Quoting statements and assertions"></span>
+<div class="unitname">Unit 40 - Quoting statements and assertions</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson40.html"><img class="youtubethumb" src="vjg/lessonimage/lesson40.jpg"></a></div>
+<div class="ran3">This unit explains how to quote statements or beliefs.<p>See also Units 19, 36, 38, and 56.</p>
+<div><h3><label class="vocab" for="40">show / hide vocabulary</label></h3></div>
+<input id="40" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">寒い (さむい) cold</li>
+<li class="words">…たい want to</li>
+<li class="words">ない absent</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">不思議 (ふしぎ) mysterious</li>
+<li class="words">危険 (きけん) dangerous</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">言う (いう) say</li>
+<li class="words">鳴く (なく) cry</li>
+<li class="words">ほえる bark</li>
+<li class="words">鳴る (なる) make sound</li>
+<li class="words">降る (ふる) fall</li>
+<li class="words">来る (くる) come</li>
+<li class="words">…て来る begin to</li>
+<li class="words">光る (ひかる) shine</li>
+<li class="words">書く (いく) write</li>
+<li class="words">休む (やすむ) rest</li>
+<li class="words">見る (みる) watch</li>
+<li class="words">申す (もうす) say (humble form)</li>
+<li class="words">おっしゃる say (honorific form)</li>
+<li class="words">守る (まもる) protect</li>
+<li class="words">働く (はたらく) work</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">分かっている be aware</li>
+<li class="words">思う (おもう) think</li>
+<li class="words">行く (いく) go</li>
+<li class="words">思っている be contemplating</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">猫 (ねこ) cat</li>
+<li class="words">犬 (いぬ) dog</li>
+<li class="words">牛 (うし) cow</li>
+<li class="words">鶏 にわとり) chicken</li>
+<li class="words">風 (かぜ) wind</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">稲妻 (いなづま) lightning</li>
+<li class="words">遠く (とおく) distance</li>
+<li class="words">雷 (かみなり) thunder</li>
+<li class="words">牧師 (ぼくし) preacher</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">翌日 (よくじつ) next day</li>
+<li class="words">今 (いま) now</li>
+<li class="words">今日 (きょう) today</li>
+<li class="words">午後 (ごご) afternoon</li>
+<li class="words">雪 (ゆき) snow</li>
+<li class="words">映画 (えいが) movie</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">こちら this one (honorific form)</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">権利 (けんり) right</li>
+<li class="words">会 (かい) association</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">人権 (じんけん) human right</li>
+<li class="words">そこ there</li>
+<li class="words">先 (さき) ahead</li>
+<li class="words">道 (みち) road</li>
+<li class="words">来年 (らいねん) next year</li>
+<li class="words">日本 (にほん) Japan</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">一日 (いちにち) one day</li>
+<li class="words">その that (modifies a noun)</li>
+<li class="words">この this (modifies a noun)</li>
+<li class="words">何 (なん) what</li>
+<li class="words">そこから from there on</li>
+<li class="words">…こと (nominalizer)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 41 - Source of information 1"></span>
+<div class="unitname">Unit 41 - Source of information 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson41.html"><img class="youtubethumb" src="vjg/lessonimage/lesson41.jpg"></a></div>
+<div class="ran3">In Japanese, the "source of information" is typically marked at the end of a sentence by a noun-like element. Representative of this type of construction are: よう "evidence," はず "common understanding," つもり "intention, belief," and そう "hearsay." This unit explains the first of these.<p>See also Unit 42.</p>
+<div><h3><label class="vocab" for="41">show / hide vocabulary</label></h3></div>
+<input id="41" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">降る (ふる) fall</li>
+<li class="words">ある exist (inanimate)</li>
+<li class="words">降る (ふる) rain</li>
+<li class="words">来る (くる) come</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">いる exist</li>
+<li class="words">使う (つかう) use</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">今晩 (こんばん) tonight</li>
+<li class="words">雪 (ゆき) snow</li>
+<li class="words">そう hearsay</li>
+<li class="words">よう appearance</li>
+<li class="words">事故 (じこ) accident</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">誰か (だれか) someone</li>
+<li class="words">ラジオ radio</li>
+<li class="words">結婚式 (けっこんしき) wedding ceremony</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">レストラン restaurant</li>
+<li class="words">コンピューター computer</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 42 - Source of information 2"></span>
+<div class="unitname">Unit 42 - Source of information 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson42.html"><img class="youtubethumb" src="vjg/lessonimage/lesson42.jpg"></a></div>
+<div class="ran3">This unit continues with the topic of marking the source of information and explains how to use はず "common understanding," つもり "intention, belief," and "hearsay."<p>See also Units 41 and 44.</p>
+<div><h3><label class="vocab" for="42">show / hide vocabulary</label></h3></div>
+<input id="42" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">簡単 (かんたん) simple</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">なる become</li>
+<li class="words">やる do</li>
+<li class="words">書く (かく) write</li>
+<li class="words">出す (だす) send</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">ある exist (inanimate)</li>
+<li class="words">出来る (できる) can do</li>
+<li class="words">下がる (さがる) go down</li>
+<li class="words">降る (ふる) fall</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">今晩 (こんばん) tonight</li>
+<li class="words">雪 (ゆき) snow</li>
+<li class="words">近所 (きんじょ) neighborhood</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">祖母 (そぼ) grandmother</li>
+<li class="words">手紙 (てがみ) letter</li>
+<li class="words">病院 (びょういん) hospital</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">ひらがな hiragana</li>
+<li class="words">漢字 (かんじ) Chinese characters</li>
+<li class="words">利率 (りりつ) interest rate</li>
+<li class="words">授業 (じゅぎょう) class</li>
+<li class="words">キャンセル cancellation</li>
+<li class="words">雨 (あめ) rain</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…けど although</li>
+<li class="words">みんなで together</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 43 - Purpose phrases 2"></span>
+<div class="unitname">Unit 43 - Purpose phrases 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson43.html"><img class="youtubethumb" src="vjg/lessonimage/lesson43.jpg"></a></div>
+<div class="ran3">This unit describes two more purpose constructions, [direct sentense + のに] and [direct sentence + ために]. Differences between these constructions and the other purpose construction studied in Unit 32 are also pointed out.<p>See also Units 32 and 44.</p>
+<div><h3><label class="vocab" for="43">show / hide vocabulary</label></h3></div>
+<input id="43" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">借りる (かりる) borrow</li>
+<li class="words">行く (いく) go</li>
+<li class="words">いる need</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">入る (はいる) enter</li>
+<li class="words">通う (かよう) commute</li>
+<li class="words">受ける (うける) take (a test)</li>
+<li class="words">する do</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">本 (ほん) book</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">パスポート passport</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">ケーキ cake</li>
+<li class="words">かさ umbrella</li>
+<li class="words">卵 (たまご) egg</li>
+<li class="words">めがね glasses</li>
+<li class="words">時間 (じかん) time</li>
+<li class="words">大学 (だいがく) university</li>
+<li class="words">塾 (じゅく) cram school</li>
+<li class="words">試験 (しけん) test</li>
+<li class="words">仕事 (しごと) work</li>
+<li class="words">適応力 (てきおうりょく) adaptability</li>
+<li class="words">集中力 (しゅうちゅうりょく) ability to concentrate</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">８時間 (はちじかん) 8 hours</li>
+<li class="words">３つ (みっつ) 3 items</li>
+<li class="words">２時間 (にじかん) 2 hours</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 44 - Sou vs. You"></span>
+<div class="unitname">Unit 44 - そう vs. よう</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson44.html"><img class="youtubethumb" src="vjg/lessonimage/lesson44.jpg"></a></div>
+<div class="ran3">This unit contrasts two markers of source of information, そう and よう, as seen in 高そうだ and 高いようだ. It points out that そう, which takes a stem form, marks the judgment as more intuitive and immediate than よう, which takes a direct-style sentence and marks the judgment as more objective and detached.<p>See also Units 22, 32, 42, and 43.</p>
+<div><h3><label class="vocab" for="44">show / hide vocabulary</label></h3></div>
+<input id="44" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">高い (たかい) expensive</li>
+<li class="words">いい good</li>
+<li class="words">ない absent</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">幸せ (しあわせ) happy</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">借りる (かりる) borrow</li>
+<li class="words">行く (いく) go</li>
+<li class="words">入る (はいる) enter</li>
+<li class="words">通う (かよう) commute</li>
+<li class="words">…すぎる be or do something excessively</li>
+<li class="words">降る (ふる) fall</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">本 (ほん) book</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">大学 (だいがく) university</li>
+<li class="words">塾 (じゅく) cram school</li>
+<li class="words">彼ら (かれら) they</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">孫娘 (まごむすめ) granddaughter</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">彼らに (かれらに) to them</li>
+<li class="words">ちょっと a little</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 45 - Quoting requests"></span>
+<div class="unitname">Unit 45 - Quoting requests</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson45.html"><img class="youtubethumb" src="vjg/lessonimage/lesson45.jpg"></a></div>
+<div class="ran3">This unit explains that quoting requests indirectly requires a different pattern from that for quoting statements.<p>See also Units 19, 40, 41, 42, and 44.</p>
+<div><h3><label class="vocab" for="45">show / hide vocabulary</label></h3></div>
+<input id="45" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行く (いく) go</li>
+<li class="words">言う (いう) tell</li>
+<li class="words">来る (くる) come</li>
+<li class="words">電話する (でんわする) make a phone call</li>
+<li class="words">頼む (たのむ) request</li>
+<li class="words">お願いする (おねがいする) request</li>
+<li class="words">出す (だす) turn in</li>
+<li class="words">歩く (あるく) walk</li>
+<li class="words">歩いて来る (あるいてくる) come on foot</li>
+<li class="words">動く (うごく) move (intransitive)</li>
+<li class="words">調べる (しらべる) check</li>
+<li class="words">食べる (たべる) eat</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">今 (いま) now</li>
+<li class="words">僕 (ぼく) I (used by males)</li>
+<li class="words">そちら that way</li>
+<li class="words">こちら this way</li>
+<li class="words">明日 (あした) tomorrow</li>
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">１０日 (とおか) tenth of the month</li>
+<li class="words">レポート report</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">方 (ほう) area</li>
+<li class="words">そこ there</li>
+<li class="words">電話番号 (でんわばんごう) telephone number</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">すぐ right away</li>
+<li class="words">…て下さい (てください) please do</li>
+<li class="words">すまない I feel sorry</li>
+<li class="words">先に (さきに) first</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 46 - Comparison of events"></span>
+<div class="unitname">Unit 46 - Comparison of events</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson46.html"><img class="youtubethumb" src="vjg/lessonimage/lesson46.jpg"></a></div>
+<div class="ran3">This unit explains how to compare two events using より "than" and ほう "option." The pattern is essentially the same as the pattern described in Unit 27 for comparing two things, except that direct-style sentences are used.<p>See also Unit 27.</p>
+<div><h3><label class="vocab" for="46">show / hide vocabulary</label></h3></div>
+<input id="46" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">新しい (あたらしい) new</li>
+<li class="words">古い (ふるい) old</li>
+<li class="words">安い (やすい) cheap</li>
+<li class="words">いい good</li>
+<li class="words">はやい fast</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">買う (かう) buy</li>
+<li class="words">なおす fix</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">運動する (うんどうする) exercise</li>
+<li class="words">ダイエットする diet</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">飲む (のむ) drink, ingest</li>
+<li class="words">歩いて行く (あるいていく) go on foot</li>
+<li class="words">行く (いく) go</li>
+<li class="words">行かない (いかない) do not go</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">辞書 (じしょ) dictionary</li>
+<li class="words">方 (ほう) side</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">ビタミン vitamin</li>
+<li class="words">車 (くるま) car</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">その that (modifies a noun)</li>
+<li class="words">…の the one</li>
+<li class="words">みんなで together</li>
+<li class="words">一人で (ひとりで) alone</li>
+<li class="words">たくさん a lot</li>
+<li class="words">車で (くるまで) by car</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 47 - Patterns of uncertainty"></span>
+<div class="unitname">Unit 47 - Patterns of uncertainty</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson47.html"><img class="youtubethumb" src="vjg/lessonimage/lesson47.jpg"></a></div>
+<div class="ran3">This unit contrasts the embedding of a question with か and the たら-conditional pattern, both of which can be translated into English with "if".<p>See also Units 5, 13, and 48.</p>
+<div><h3><label class="vocab" for="47">show / hide vocabulary</label></h3></div>
+<input id="47" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">いい good</li>
+<li class="words">むずかしい difficult</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">便利 (べんり) convenient</li>
+<li class="words">不便 (ふべん) inconvenient</li>
+<li class="words">簡単 (かんたん) simple</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">降る (ふる) fall</li>
+<li class="words">知る (しる) come to know</li>
+<li class="words">来られる (こられる) can come</li>
+<li class="words">教える (おしえる) teach</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">調べる (しらべる) check</li>
+<li class="words">始める (はじめる) begin</li>
+<li class="words">とばす skip</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">洗う (あらう) wash</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">運転する (うんてんする) drive</li>
+<li class="words">行く (いく) go</li>
+<li class="words">言う (いう) say</li>
+<li class="words">する do</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">着く (つく) arrive</li>
+<li class="words">起きる (おきる) get up</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">雨 (あめ) rain</li>
+<li class="words">試合 (しあい) game</li>
+<li class="words">キャンセル cancellation</li>
+<li class="words">そこ there</li>
+<li class="words">説明 (せつめい) explanation</li>
+<li class="words">お酒 (おさけ) alcohol</li>
+<li class="words">自転車 (じてんしゃ) bicycle</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">こと thing</li>
+<li class="words">君 (きみ) you (used by males)</li>
+<li class="words">他 (ほか) other</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">電車 (でんしゃ) train</li>
+<li class="words">時 (とき) time</li>
+<li class="words">となり adjoining space</li>
+<li class="words">ホーム platform</li>
+<li class="words">朝 (あさ) morning</li>
+<li class="words">雪 (ゆき) snow</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…て下さい (てください) please do</li>
+<li class="words">どう how</li>
+<li class="words">どちら which one</li>
+<li class="words">いつ when</li>
+<li class="words">どれ which one</li>
+<li class="words">一番 (いちばん) most</li>
+<li class="words">もっと more</li>
+<li class="words">…のに in spite of the fact that</li>
+<li class="words">きれいに cleanly</li>
+<li class="words">運転しないでください (うんてんしないでください) please do not drive</li>
+<li class="words">飲まないでください (のまないでください) please do not drink</li>
+<li class="words">あんな that sort of</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 48 - Two more conditionals"></span>
+<div class="unitname">Unit 48 - Two more conditionals</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson48.html"><img class="youtubethumb" src="vjg/lessonimage/lesson48.jpg"></a></div>
+<div class="ran3">This unit explains two more conditional patterns, the れば-conditional, which is more hypothetical, and the と-conditional, which leads to an inevitable consequence.<p>See also Unit 47.</p>
+<div><h3><label class="vocab" for="48">show / hide vocabulary</label></h3></div>
+<input id="48" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">むずかしい difficult</li>
+<li class="words">いい good</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">簡単 (かんたん) simple</li>
+<li class="words">まじめ serious</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">降る (ふる) fall</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">とばす skip</li>
+<li class="words">言う (いう) say</li>
+<li class="words">する do</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">はなす let go</li>
+<li class="words">運転する (うんてんする) drive</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">なる become</li>
+<li class="words">押す (おす) push</li>
+<li class="words">開く (あく) open</li>
+<li class="words">見る (みる) watch</li>
+<li class="words">出て来る (でてくる) come out</li>
+<li class="words">帰る (かえる) return</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">待っている (まっている) be waiting</li>
+<li class="words">始める (はじめる) begin</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">雨 (あめ) rain</li>
+<li class="words">試合 (しあい) game</li>
+<li class="words">キャンセル cancellation</li>
+<li class="words">うそ lie</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">こと thing</li>
+<li class="words">君 (きみ) you (used by males)</li>
+<li class="words">本当 (ほんとう) truth</li>
+<li class="words">母親 (ははおや) mother</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">手 (て) hand</li>
+<li class="words">お酒 (おさけ) alcohol</li>
+<li class="words">自転車 (じてんしゃ) bicycle</li>
+<li class="words">薬 (くすり) medicine</li>
+<li class="words">ボタン button</li>
+<li class="words">ドア door</li>
+<li class="words">アパート apartment</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">説明 (せつめい) explanation</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">もっと more</li>
+<li class="words">…のに in spite of the fact that</li>
+<li class="words">そんな that kind of</li>
+<li class="words">どう how</li>
+<li class="words">まじめに seriously</li>
+<li class="words">…はずだ it is expected that</li>
+<li class="words">飲まないでください (のまないでください) please do not drink</li>
+<li class="words">この this (modifies a noun)</li>
+<li class="words">必ず (かならず) without fail</li>
+<li class="words">すぐ right away</li>
+<li class="words">よく well</li>
+<li class="words">何か (なにか) something</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 49 - Verbs of giving"></span>
+<div class="unitname">Unit 49 - Verbs of giving</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson49.html"><img class="youtubethumb" src="vjg/lessonimage/lesson49.jpg"></a></div>
+<div class="ran3">This unit first explains the basic difference between two verbs corresponding to "give". Their auxiliary usage is explained next.<p>See also Units 24 and 53.</p>
+<div><h3><label class="vocab" for="49">show / hide vocabulary</label></h3></div>
+<input id="49" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">あげる give (outward)</li>
+<li class="words">くれる give (inward)</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">持つ (もつ) hold</li>
+<li class="words">出す (だす) send out</li>
+<li class="words">行く (いく) go</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">教える (おしえる) teach</li>
+<li class="words">知る (しる) come to know</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">私 (わたし) I</li>
+<li class="words">妹 (いもうと) younger sister</li>
+<li class="words">プレゼント present</li>
+<li class="words">弟 (おとうと) younger brother</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">母 (はは) mother</li>
+<li class="words">荷物 (にもつ) luggage</li>
+<li class="words">ひろし (male name)</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">手紙 (てがみ) letter</li>
+<li class="words">卵 (たまご) egg</li>
+<li class="words">ひろこ (female name)</li>
+<li class="words">マフラー scarf</li>
+<li class="words">木村さん (きむらさん) Mr./Ms. Kimura</li>
+<li class="words">朝ご飯 (あさごはん) breakfast</li>
+<li class="words">漢字 (かんじ) Chinese characters</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">道 (みち) road</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 50 - Nominalization 2"></span>
+<div class="unitname">Unit 50 - Nominalization 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson50.html"><img class="youtubethumb" src="vjg/lessonimage/lesson50.jpg"></a></div>
+<div class="ran3">This unit explains a number of constructions that contain the nominalizer こと.<p>See also Units 38, 40, and 52.</p>
+<div><h3><label class="vocab" for="50">show / hide vocabulary</label></h3></div>
+<input id="50" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">嫌 (いや) dislike</li>
+<li class="words">好き (すき) like</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">待つ (まつ) wait</li>
+<li class="words">気がつく (きがつく) notice</li>
+<li class="words">見る (みる) watch</li>
+<li class="words">手伝う (てつだう) help</li>
+<li class="words">聞こえる (きこえる) be audible</li>
+<li class="words">ある exist</li>
+<li class="words">する do</li>
+<li class="words">なる become</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">行く (いく) go</li>
+<li class="words">帰る (かえる) return</li>
+<li class="words">寝る (ねる) go to bed</li>
+<li class="words">Ｕターンする make a U-turn</li>
+<li class="words">知っている (しっている) know</li>
+<li class="words">忘れる (わすれる) forget</li>
+<li class="words">思い出す (おもいだす) recall</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">建つ (たつ) be built</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">外 (そと) outside</li>
+<li class="words">飛行機 (ひこうき) airplane</li>
+<li class="words">中国語 (ちゅうごくご) Chinese language</li>
+<li class="words">仕事 (しごと) work</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">中国 (ちゅうごく) China</li>
+<li class="words">スカイダイビング skydiving</li>
+<li class="words">家 (うち) house</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">８時 (はちじ) 8 o’clock</li>
+<li class="words">ここ here</li>
+<li class="words">本当 (ほんとう) truth</li>
+<li class="words">バハマ Bahamas</li>
+<li class="words">発電所 (はつでんしょ) power plant</li>
+<li class="words">来週 (らいしゅう) next week</li>
+<li class="words">しめきり deadline</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">誰か (だれか) someone</li>
+<li class="words">…てはいけない it is forbidden to</li>
+<li class="words">でも but</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 51 - Tense"></span>
+<div class="unitname">Unit 51 - Tense</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson51.html"><img class="youtubethumb" src="vjg/lessonimage/lesson51.jpg"></a></div>
+<div class="ran3">This unit explains that the tense (past or non-past) in the subordinate clause in Japanese is determined relative to the main clause rather than to the point where the speaker is.</p>
+<div><h3><label class="vocab" for="51">show / hide vocabulary</label></h3></div>
+<input id="51" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">嫌 (いや) dislike</li>
+<li class="words">好き (すき) like</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">みがく brush (the teeth)</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">洗う (あらう) wash</li>
+<li class="words">シャワーを浴びる (シャワーをあびる) take a shower</li>
+<li class="words">来る (くる) come</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">行く (いく) go</li>
+<li class="words">乗る (のる) ride</li>
+<li class="words">思っている (おもっている) think</li>
+<li class="words">いる be present</li>
+<li class="words">寝る (ねる) go to bed</li>
+<li class="words">帰る (かえる) return</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">歯 (は) tooth</li>
+<li class="words">手 (て) hand</li>
+<li class="words">朝ご飯 (あさごはん) breakfast</li>
+<li class="words">バス bus</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">電車 (でんしゃ) train</li>
+<li class="words">家 (うち) house</li>
+<li class="words">お父さん (おとうさん) father</li>
+<li class="words">みんな everyone</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…後で (あとで) after (something happens)</li>
+<li class="words">…前に (まえに) before (something happens)</li>
+<li class="words">すぐ right away</li>
+<li class="words">まだ yet</li>
+<li class="words">一人で (ひとりで) alone</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 52 - No and koto"></span>
+<div class="unitname">Unit 52 - の and こと</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson52.html"><img class="youtubethumb" src="vjg/lessonimage/lesson52.jpg"></a></div>
+<div class="ran3">This unit contrasts the pronominal and nominalizing functions of の and こと.<p>See also Units 38 and 50.</p>
+<div><h3><label class="vocab" for="52">show / hide vocabulary</label></h3></div>
+<input id="52" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">安い (やすい) cheap</li>
+<li class="words">高い (たかい) expensive</li>
+<li class="words">むずかしい difficult</li>
+<li class="words">…やすい easy to do</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">異常 (いじょう) abnormal</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">する do</li>
+<li class="words">手伝う (てつだう) help</li>
+<li class="words">行く (いく) go</li>
+<li class="words">ある exist</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">着る (きる) wear</li>
+<li class="words">立つ stand</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">理解する (りかいする) comprehend</li>
+<li class="words">知っている (しっている) know</li>
+<li class="words">調べる (しらべる) check</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">見る (みる) watch</li>
+<li class="words">待つ (まつ) wait</li>
+<li class="words">忘れる (わすれる) forget</li>
+<li class="words">忘れている be oblivious</li>
+<li class="words">報告する (ほうこくする) report</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">私 (わたし) I</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">ドレス dress</li>
+<li class="words">昨日 (きのう) yesterday</li>
+<li class="words">あそこ there</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">木 (き) tree</li>
+<li class="words">下 (した) below</li>
+<li class="words">所 (ところ) place</li>
+<li class="words">シチュー stew</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">発電所 (はつでんしょ) power plant</li>
+<li class="words">中 (なか) inside</li>
+<li class="words">水蒸気 (すいじょうき) steam</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">もっと more</li>
+<li class="words">誰 (だれ) who</li>
+<li class="words">３時頃 (さんじごろ) around 3 o’clock</li>
+<li class="words">そんな that kind of</li>
+<li class="words">その that (modifies a noun)</li>
+<li class="words">誰か (だれか) someone</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 53 - Patterns of consequence"></span>
+<div class="unitname">Unit 53 - Patterns of consequence</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson53.html"><img class="youtubethumb" src="vjg/lessonimage/lesson53.jpg"></a></div>
+<div class="ran3">This unit summarizes a number of patterns involving te-forms and those verbs that can be used as auxiliary verbs. Specifically, the verbs described are あげる, くれる, いる, 来る, いく, おく, ある, しまう, みる, and みせる. In combination with a て-form, these verbs indicate that the event or action has some consequence or impact to a receiver, a destination, a future point, an observer, etc.<p>See also Units 7, 24, 25, 49, 54, and 64.</p>
+<div><h3><label class="vocab" for="53">show / hide vocabulary</label></h3></div>
+<input id="53" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おいしい delicious</li>
+<li class="words">新しい (あたらしい) new</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">好き (すき) like</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">読む (よむ) read</li>
+<li class="words">くれる give (inward)</li>
+<li class="words">あげる give (outward)</li>
+<li class="words">いる stay</li>
+<li class="words">落ちる (おちる) fall</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">来る (くる) come</li>
+<li class="words">おく put</li>
+<li class="words">する do</li>
+<li class="words">ある exist</li>
+<li class="words">遅れる (おくれる) be delayed</li>
+<li class="words">しまう put away</li>
+<li class="words">なる become</li>
+<li class="words">寝る (ねる) go to bed</li>
+<li class="words">みる see</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">分かる (わかる) understand</li>
+<li class="words">かぶる wear (a hat)</li>
+<li class="words">見せる (みせる) show</li>
+<li class="words">話す (はなす) talk</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">母 (はは) mother</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">弟 (おとうと) younger brother</li>
+<li class="words">お金 (おかね) money</li>
+<li class="words">すし sushi</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">宿題 (しゅくだい) homework</li>
+<li class="words">インフルエンザ flu</li>
+<li class="words">予防注射 (よぼうちゅうしゃ) inoculation</li>
+<li class="words">バス bus</li>
+<li class="words">あなた you</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">帽子 (ぼうし)  hat</li>
+<li class="words">前 (まえ)  front</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">…前に (まえに) before (something happens)</li>
+<li class="words">とっくに way in advance</li>
+<li class="words">しまった darn</li>
+<li class="words">もう already</li>
+<li class="words">一口 (ひとくち) one mouthful</li>
+<li class="words">…たら when</li>
+<li class="words">何度も (なんども) many times</li>
+<li class="words">…まで until</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 54 - Temo"></span>
+<div class="unitname">Unit 54 - ても</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson54.html"><img class="youtubethumb" src="vjg/lessonimage/lesson54.jpg"></a></div>
+<div class="ran3">This unit discusses the use of て-forms followed by the particle も. The basic meaning of this construction is that different conditions lead to an identical consequence.<p>See also Units 22, 53, and 55.</p>
+<div><h3><label class="vocab" for="54">show / hide vocabulary</label></h3></div>
+<input id="54" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">暑い (あつい) hot</li>
+<li class="words">いい OK</li>
+<li class="words">おいしい delicious</li>
+<li class="words">丸い (まるい) round</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">行く (いく) go</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">降る (ふる) rain</li>
+<li class="words">泳ぐ (およぐ) swim</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">来る (くる) come</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">見る (みる) watch</li>
+<li class="words">入る (はいる) enter</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">雨 (あめ) rain</li>
+<li class="words">散歩 (さんぽ) walk</li>
+<li class="words">プール swimming pool</li>
+<li class="words">エアコン air conditioner</li>
+<li class="words">３時 (さんじ) 3 o’clock</li>
+<li class="words">４時 (よじ) 4 o’clock</li>
+<li class="words">５時 (ごじ) 5 o’clock</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">弟 (おとうと) younger brother</li>
+<li class="words">妹 (いもうと) younger sister</li>
+<li class="words">右 (みぎ) right side</li>
+<li class="words">左 (ひだり) left side</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">何時 (なんじ) what time</li>
+<li class="words">どちら which one</li>
+<li class="words">どうぞ please</li>
+<li class="words">ちょっと a little</li>
+<li class="words">ええ yes</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 55 - Permission and prohibition"></span>
+<div class="unitname">Unit 55 - Permission and prohibition</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson55.html"><img class="youtubethumb" src="vjg/lessonimage/lesson55.jpg"></a></div>
+<div class="ran3">This unit describes the patterns for permission, exemption, prohibition, and obligation, which are created by combining a positive or negative て-form with もいい (permissive attitude) or はいけない (restrictive attitude).<p>See also Unit 54.</p>
+<div><h3><label class="vocab" for="55">show / hide vocabulary</label></h3></div>
+<input id="55" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">いい OK</li>
+<li class="words">いけない not OK</li>
+<li class="words">新しい (あたらしい) new</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">すわる sit</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">開ける (あける) open</li>
+<li class="words">まがる turn</li>
+<li class="words">行く (いく) go</li>
+<li class="words">ネクタイをする wear a tie</li>
+<li class="words">とる take</li>
+<li class="words">渡る (わたる) cross</li>
+<li class="words">寝る (ねる) sleep</li>
+<li class="words">出す (だす) put out</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">着る (きる) wear</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">油 (あぶら) oil</li>
+<li class="words">窓 (まど) window</li>
+<li class="words">左 (ひだり) left side</li>
+<li class="words">車線 (しゃせん) lane</li>
+<li class="words">ネクタイ necktie</li>
+<li class="words">金曜日 (きんようび) Friday</li>
+<li class="words">写真 (しゃしん) photo</li>
+<li class="words">お皿 (おさら) plate</li>
+<li class="words">テレビ television</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">シャツ shirt</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">まっすぐ straight</li>
+<li class="words">まだ still</li>
+<li class="words">もう already</li>
+<li class="words">一枚 (いちまい) one sheet</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 56 - Honorifics"></span>
+<div class="unitname">Unit 56 - Honorifics</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson56.html"><img class="youtubethumb" src="vjg/lessonimage/lesson56.jpg"></a></div>
+<div class="ran3">This unit describes the system of honorifics in Japanese, beginning with honorific kinship terms and ending with honorific verbs.<p>See also Unit 19.</p>
+<div><h3><label class="vocab" for="56">show / hide vocabulary</label></h3></div>
+<input id="56" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">美しい (うつくしい) beautiful</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">幸せ (しあわせ) happy</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">いらっしゃる come (honorific form)</li>
+<li class="words">来る (くる) come</li>
+<li class="words">いう say</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">めしあがる eat (honorific form)</li>
+<li class="words">いただく partake (humble form)</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">すわる sit</li>
+<li class="words">起きる (おきる) get up</li>
+<li class="words">帰る (かえる) return</li>
+<li class="words">飲む (のむ) drink</li>
+<li class="words">思う (おもう) think</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">先生 (せんせい) teacher</li>
+<li class="words">両親 (りょうしん) parents</li>
+<li class="words">御両親 (ごりょうしん) parents (honorific forms)</li>
+<li class="words">おかあさん mother</li>
+<li class="words">おとうさん father</li>
+<li class="words">おにいさん elder brother</li>
+<li class="words">はは mother</li>
+<li class="words">わたくし I (formal form)</li>
+<li class="words">こちら this person (honorific form)</li>
+<li class="words">今回 (こんかい) this time</li>
+<li class="words">予定 (よてい) plan</li>
+<li class="words">御予定 (ごよてい) plan (honorific form)</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">ほか other</li>
+<li class="words">人 (ひと) person</li>
+<li class="words">３時 (さんじ) 3 o’clock</li>
+<li class="words">お客さん (おきゃくさん) guest</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">よろしく best regards</li>
+<li class="words">どちらwhere</li>
+<li class="words">いつ when</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 57 - Apologies and thanks"></span>
+<div class="unitname">Unit 57 - Apologies and thanks</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson57.html"><img class="youtubethumb" src="vjg/lessonimage/lesson57.jpg"></a></div>
+<div class="ran3">This unit describes the patterns for apologies and thanks consisting of a て-form and an expression of apology or appreciation.<p>See also Unit 53.</p>
+<div><h3><label class="vocab" for="57">show / hide vocabulary</label></h3></div>
+<input id="57" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">遅れる (おくれる) be delayed</li>
+<li class="words">…てしまう (indicates that the event is out of control)</li>
+<li class="words">来る (くる) come</li>
+<li class="words">行く (いく) go</li>
+<li class="words">忘れる (わすれる) forget</li>
+<li class="words">参加する (さんかする) participate</li>
+<li class="words">…て下さる (てくださる) (honorific form indicating that the action benefits the speaker)</li>
+<li class="words">書く (かく) write</li>
+<li class="words">紹介する (しょうかいする) introduce</li>
+<li class="words">…てくれる (indicates that the action benefits the speaker)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">昨日 (きのう) yesterday</li>
+<li class="words">クラス class</li>
+<li class="words">誕生日 (たんじょうび) birthday</li>
+<li class="words">連絡 (れんらく) contact</li>
+<li class="words">ご連絡 contact (humble form)</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">すみません I am sorry</li>
+<li class="words">ごめんなさいI am sorry</li>
+<li class="words">申し訳ありません (もうしわけありません) there is no excuse</li>
+<li class="words">ありがとう thank you</li>
+<li class="words">どうもありがとう thank you very much</li>
+<li class="words">どうもありがとうございます thank you very much (polite form)</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 58 - Requests and commands"></span>
+<div class="unitname">Unit 58 - Requests and commands</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson58.html"><img class="youtubethumb" src="vjg/lessonimage/lesson58.jpg"></a></div>
+<div class="ran3">This unit describes various patterns for requests and commands from the more polite type to the more brusque type.<p>See also Unit 10.</p>
+<div><h3><label class="vocab" for="58">show / hide vocabulary</label></h3></div>
+<input id="58" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">見る (みる) look</li>
+<li class="words">書く (かく) write</li>
+<li class="words">答える (こたえる) answer</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">分ける (わける) divide</li>
+<li class="words">変える (かえる) change</li>
+<li class="words">決める (きめる) decide</li>
+<li class="words">捨てる (すてる) throw away</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">呼ぶ (よぶ) call out</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">急ぐ (いそぐ) hurry</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">する do</li>
+<li class="words">来る (くる) come</li>
+<li class="words">入る (はいる) enter</li>
+<li class="words">言われる (いわれる) be told</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">こちら this way</li>
+<li class="words">教科書 (きょうかしょ) textbook</li>
+<li class="words">推薦状 (すいせんじょう) letter of recommendation</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">次 (つぎ) next</li>
+<li class="words">質問 (しつもん) question</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">中 (なか) inside</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">お願いします (おねがいします) I request</li>
+<li class="words">どうぞ please</li>
+<li class="words">よく carefully</li>
+<li class="words">…くださいませんか wouldn’t you please</li>
+<li class="words">…いただけませんか couldn’t I ask you to</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 59 - Passive"></span>
+<div class="unitname">Unit 59 - Passive</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson59.html"><img class="youtubethumb" src="vjg/lessonimage/lesson59.jpg"></a></div>
+<div class="ran3">This unit first explains the contrast between active and passive sentences in English. How to form passive sentences in Japanese is explained next.<p>See also Unit 60.</p>
+<div><h3><label class="vocab" for="59">show / hide vocabulary</label></h3></div>
+<input id="59" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">大きい (おおきい) big</li>
+<li class="words">小さい (ちいさい) small</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">食べる (たべる) eat</li>
+<li class="words">分ける (わける) divide</li>
+<li class="words">変える (かえる) change</li>
+<li class="words">決める (きめる) decide</li>
+<li class="words">捨てる (すてる) throw away</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">呼ぶ (よぶ) call out</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">書く (かく) write</li>
+<li class="words">急ぐ (いそぐ) hurry</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">する do</li>
+<li class="words">勉強する (べんきょうする) study</li>
+<li class="words">来る (くる) come</li>
+<li class="words">出版する (しゅっぱんする) publish (books)</li>
+<li class="words">設計する (せっけいする) design</li>
+<li class="words">建てる (たてる) build</li>
+<li class="words">発表する (はっぴょうする) announce</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">魚 (さかな) fish</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">日本 (にほん) Japan</li>
+<li class="words">ホテル hotel</li>
+<li class="words">ライト (Frank Lloyd Wright)</li>
+<li class="words">まんが comics</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">病院 (びょういん) hospital</li>
+<li class="words">牛乳 (ぎゅうにゅう) milk</li>
+<li class="words">世界 (せかい) world</li>
+<li class="words">子どもたち (こどもたち) children</li>
+<li class="words">新車 (しんしゃ) new car (model)</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">あの that (modifies a noun)</li>
+<li class="words">一年に (いちねんに) in a year</li>
+<li class="words">一人 (ひとり) one person</li>
+<li class="words">…あたり per</li>
+<li class="words">８０リットル (はちじゅうリットル) 80 liters</li>
+<li class="words">…ぐらい about</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 60 - Adversity passive"></span>
+<div class="unitname">Unit 60 - Adversity passive</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson60.html"><img class="youtubethumb" src="vjg/lessonimage/lesson60.jpg"></a></div>
+<div class="ran3">This unit explains another type of passive construction known as "adversity" or "affective" passive. This constuction utilizes the same passive verb forms studied in Unit 59, but for a different effect. It indicates that the subject is adversely affected by someone's action.<p>See also Unit 59.</p>
+<div><h3><label class="vocab" for="60">show / hide vocabulary</label></h3></div>
+<input id="60" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">読む (よむ) read</li>
+<li class="words">立つ (たつ) stand</li>
+<li class="words">行く (いく) go</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">とる take</li>
+<li class="words">聞く (きく) listen</li>
+<li class="words">する do</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">降る (ふる) fall</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">本 (ほん) book</li>
+<li class="words">世界 (せかい) world</li>
+<li class="words">子ども (こども) child</li>
+<li class="words">子どもたち children</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">お兄さん (おにいさん) elder brother</li>
+<li class="words">ケーキ cake</li>
+<li class="words">すり pickpocket</li>
+<li class="words">お金 (おかね) money</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">電話 (でんわ) phone</li>
+<li class="words">話 (はなし) talk</li>
+<li class="words">お父さん (おとうさん) father</li>
+<li class="words">日記 (にっき) diary</li>
+<li class="words">弟 (おとうと) younger brother</li>
+<li class="words">いたずら書き (いたずらがき) scribbling</li>
+<li class="words">金魚 (きんぎょ) goldfish</li>
+<li class="words">雨 (あめ) rain</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">この this (modifies a noun)</li>
+<li class="words">先に (さきに) ahead</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 61 - Patterns of control 1"></span>
+<div class="unitname">Unit 61 - Patterns of control 1</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson61.html"><img class="youtubethumb" src="vjg/lessonimage/lesson61.jpg"></a></div>
+<div class="ran3">This unit explains the causative constructions in which the subject lets or forces someone to do something.</p>
+<div><h3><label class="vocab" for="61">show / hide vocabulary</label></h3></div>
+<input id="61" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">立つ (たつ) stand</li>
+<li class="words">行く (いく) go</li>
+<li class="words">食べる (たべる) eat</li>
+<li class="words">分ける (わける) divide</li>
+<li class="words">変える (かえる) change</li>
+<li class="words">決める (きめる) decide</li>
+<li class="words">捨てる (すてる) throw away</li>
+<li class="words">作る (つくる) make</li>
+<li class="words">使う (つかう) use</li>
+<li class="words">呼ぶ (よぶ) call out</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">死ぬ (しぬ) die</li>
+<li class="words">書く (かく) write</li>
+<li class="words">急ぐ (いそぐ) hurry</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">する do</li>
+<li class="words">来る (くる) come</li>
+<li class="words">泣く (なく) cry</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">子ども (こども) child</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">学校 (がっこう) school</li>
+<li class="words">男の子 (おとこのこ) boy</li>
+<li class="words">女の子 (おんなのこ) girl</li>
+<li class="words">金魚 (きんぎょ) goldfish</li>
+<li class="words">野菜 (やさい) vegetable</li>
+<li class="words">薬 (くすり) medicine</li>
+<li class="words">お父さん (おとうさん) father</li>
+<li class="words">宿題 (しゅくだい) homework</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">先に (さきに) ahead</li>
+<li class="words">子どもだけで (こどもだけで) only on the children’s own</li>
+<li class="words">…達 (たち) group</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 62 - Patterns of control 2"></span>
+<div class="unitname">Unit 62 - Patterns of control 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson62.html"><img class="youtubethumb" src="vjg/lessonimage/lesson62.jpg"></a></div>
+<div class="ran3">This unit explains the てもらう construction, which is similar to that of the "let" causative. The subject in this construction is grateful for the action performed by someone.<p>See also Units 60 and 61.</p>
+<div><h3><label class="vocab" for="62">show / hide vocabulary</label></h3></div>
+<input id="62" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">ほしい want</li>
+<li class="words">うれしい happy</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">立つ (たつ) stand</li>
+<li class="words">行く (いく) go</li>
+<li class="words">…て来る (てくる) come having done something</li>
+<li class="words">買う (かう) buy</li>
+<li class="words">連れて行く (つれていく) take along</li>
+<li class="words">来る (くる) come</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">なおす fix</li>
+<li class="words">なおせる can fix</li>
+<li class="words">もらえる can receive</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">子ども (こども) child</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">郵便局 (ゆうびんきょく) post office</li>
+<li class="words">お母さん (おかあさん) mother</li>
+<li class="words">ゲーム game</li>
+<li class="words">映画 (えいが) movie</li>
+<li class="words">お父さん (おとうさん) father</li>
+<li class="words">家 (うち) house</li>
+<li class="words">友だち (ともだち) friend</li>
+<li class="words">パパ dad</li>
+<li class="words">本 (ほん) book</li>
+<li class="words">自転車 (じてんしゃ) bicycle</li>
+<li class="words">３時 (さんじ) 3 o’clock</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">ありがとう thank you</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 63 - Easy Understanding Japanese: Transitivity 2"></span>
+<div class="unitname">Unit 63 Easy Understanding Japanese: Transitivity 2</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson63.html"><img class="youtubethumb" src="vjg/lessonimage/lesson63.jpg"></a></div>
+<div class="ran3">This unit describes how to use pairs of closely related transitive and intransitive verbs. The effect of using such intransitive verbs with the resultant continuative construction ている is also discussed.<p>See also Units 7 and 25.</p>
+<div><h3><label class="vocab" for="63">show / hide vocabulary</label></h3></div>
+<input id="63" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">開ける (あける) open (transitive)</li>
+<li class="words">開く (あく) open (intransitive)</li>
+<li class="words">出す (だす) pull out</li>
+<li class="words">出る (でる) come out</li>
+<li class="words">入れる (いれる) put in</li>
+<li class="words">入る (はいる) enter</li>
+<li class="words">閉める (しめる) close (transitive)</li>
+<li class="words">閉まる (しまる) close (intransitive)</li>
+<li class="words">かける stretch across</li>
+<li class="words">かかる be hung across</li>
+<li class="words">つける attach</li>
+<li class="words">つく come into contact</li>
+<li class="words">消す (けす) extinguish</li>
+<li class="words">消える (きえる) go off</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">私 (わたし) I</li>
+<li class="words">窓 (まど) window</li>
+<li class="words">鍵 (かぎ) key/lock</li>
+<li class="words">セーター sweater</li>
+<li class="words">ドア door</li>
+<li class="words">電気 (でんき) electricity</li>
+<li class="words">外 (そと) outside</li>
+<li class="words">中 (なか) inside</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 64 - Differences between Te aru and te iru"></span>
+<div class="unitname">Unit 64 - Differences between てある and ている</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson64.html"><img class="youtubethumb" src="vjg/lessonimage/lesson64.jpg"></a></div>
+<div class="ran3">This unit discusses the differences between てある and ている when paired with the type of intransitive verbs studied in Unit 63.<p>See also Units 25, 53, and 63.</p>
+<div><h3><label class="vocab" for="64">show / hide vocabulary</label></h3></div>
+<input id="64" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">作る (つくる) open (transitive)</li>
+<li class="words">結婚する (けっこんする) open (transitive)</li>
+<li class="words">出す (だす) pull out</li>
+<li class="words">出る (でる) come out</li>
+<li class="words">開ける (あける) open (transitive)</li>
+<li class="words">開く (あく) open (intransitive)</li>
+<li class="words">閉める (しめる) close (transitive)</li>
+<li class="words">閉まる (しまる) close (intransitive)</li>
+<li class="words">かける stretch across</li>
+<li class="words">かかる be hung across</li>
+<li class="words">つける attach</li>
+<li class="words">つく come into contact</li>
+<li class="words">消す (けす) extinguish</li>
+<li class="words">消える (きえる) go off</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">すし sushi</li>
+<li class="words">セーター sweater</li>
+<li class="words">ドア door</li>
+<li class="words">鍵 (かぎ) key, lock</li>
+<li class="words">電気 (でんき) electricity</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 65 - Male and female differences"></span>
+<div class="unitname">Unit 65 - Male and female differences</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson65.html"><img class="youtubethumb" src="vjg/lessonimage/lesson65.jpg"></a></div>
+<div class="ran3">This unit describes differences between male and female casual speech patterns with the focus on the endings.<p>See also Units 19 and 58.</p>
+<div><h3><label class="vocab" for="65">show / hide vocabulary</label></h3></div>
+<input id="65" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">高い (たかい) expensive</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">大丈夫 (だいじょうぶ) all right</li>
+<li class="words">だめ no good</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">出来る (できる) can do</li>
+<li class="words">着く (つく) arrive</li>
+<li class="words">参る (まいる) go (humble form)</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">手紙 (てがみ) letter</li>
+<li class="words">私 (わたし) I</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">もう already</li>
+<li class="words">多分 (たぶん) probably</li>
+<li class="words">少々 (しょうしょう) a little while</li>
+<li class="words">お待ちください (おまちください) please wait</li>
+</ul>
+</div>
+</div>
+</div>
+<hr class="dotted">
+
+<span id="Unit 66 - Common errors"></span>
+<div class="unitname">Unit 66 - Common errors</div>
+<div class="container2">
+<div class="ran2"><a href="vjg/lessons/lesson66.html"><img class="youtubethumb" src="vjg/lessonimage/lesson66.jpg"></a></div>
+<div class="ran3">This unit illustrates a number of errors that a student of Japanese should avoid (although we admit that teachers of Japanese love them).</p>
+<div><h3><label class="vocab" for="66">show / hide vocabulary</label></h3></div>
+<input id="66" type="checkbox"><div style="display: none;"> 
+<ul class="wordlist">
+<li class="words">い-adjectives:</li>
+<ul class="wordlist">
+<li class="words">おいしい delicious</li>
+<li class="words">大きい (おおきい) big</li>
+<li class="words">ない non-existent</li>
+<li class="words">いない not present</li>
+</ul>
+<li class="words">な adjectives:</li>
+<ul class="wordlist">
+<li class="words">(direct form +) そう hearsay</li>
+<li class="words">(stem +) そう intuitive judgment</li>
+</ul>
+<li class="words">Verbs:</li>
+<ul class="wordlist">
+<li class="words">食べる (たべる) eat</li>
+<li class="words">読む (よむ) read</li>
+<li class="words">結婚する (けっこんする) get married</li>
+<li class="words">結婚している (けっこんしている) be married</li>
+<li class="words">行く (いく) go</li>
+<li class="words">持つ (もつ) hold</li>
+<li class="words">持って行く (もっていく) take along</li>
+<li class="words">見る (みる) see</li>
+<li class="words">会う (あう) meet</li>
+<li class="words">話す (はなす) talk</li>
+<li class="words">着る (きる) wear (covering the upper body)</li>
+<li class="words">着ている (きている) be wearing</li>
+<li class="words">はく wear (below the waist)</li>
+<li class="words">はいている be wearing</li>
+<li class="words">ある exist (inanimate)</li>
+<li class="words">なる become</li>
+<li class="words">食べさせる (たべさせる) make someone eat</li>
+<li class="words">言う (いう) say</li>
+<li class="words">来る (くる) come</li>
+<li class="words">電話する (でんわする) make a phone call</li>
+</ul>
+<li class="words">Nouns:</li>
+<ul class="wordlist">
+<li class="words">テキサス Texas</li>
+<li class="words">アメリカ America</li>
+<li class="words">ケーキ cake</li>
+<li class="words">私 (わたし) I</li>
+<li class="words">100ページ (ひゃくページ) page 100</li>
+<li class="words">魚 (さかな) fish</li>
+<li class="words">駅 (えき) station</li>
+<li class="words">前 (まえ) front</li>
+<li class="words">彼女 (かのじょ) she/girlfriend</li>
+<li class="words">図書館 (としょかん) library</li>
+<li class="words">スカート skirt</li>
+<li class="words">日本語 (にほんご) Japanese language</li>
+<li class="words">試験 (しけん) test</li>
+<li class="words">二日 (ふつか) 2nd day of the month</li>
+<li class="words">猫 (ねこ) cat</li>
+<li class="words">ドッグフード dog food</li>
+<li class="words">家 (うち) house</li>
+</ul>
+<li class="words">Others:</li>
+<ul class="wordlist">
+<li class="words">100ページ (ひゃくページ) 100 pages</li>
+<li class="words">二日 (ふつか) 2 days</li>
+<li class="words">二年 (にねん) 2 years</li>
+<li class="words">二年前 (にねんまえ) 2 years ago</li>
+<li class="words">…でしょう I suppose that</li>
+<li class="words">…ましょう let’s</li>
+<li class="words">先に (さきに) ahead</li>
+<li class="words">…と (particle for quotation)</li>
+<li class="words">…ように (expression for goals)</li>
+<li class="words">…たら if or when something happens</li>
+<li class="words">…んだったら if it is the case that</li>
+</ul>
+</div>
+</div>
+<hr class="dotted">
+</div>
+
+</div>
+
+<a id="backtop" href="#top">&#9650;</a>
+<div class="ashi"></div>
+</body>
+</html>
+
+
